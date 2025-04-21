@@ -4,3 +4,9 @@
 #navbarSupportedContent ul li a{
     color: aliceblue;
 }
+#navbarSupportedContent ul li a:hover{
+    border-bottom: 3px solid lightblue;
+    color: lightblue;
+    background-color: whitesmoke;
+    border-radius:50px 50px 50px 50px;
+}
