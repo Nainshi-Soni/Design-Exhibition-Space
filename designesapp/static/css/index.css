@@ -1,3 +1,6 @@
-.nav{
-    background-color: pink;
+.navv{
+    background-color:pink;
+}
+#navbarSupportedContent ul li a{
+    color: aliceblue;
 }
