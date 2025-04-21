@@ -10,3 +10,25 @@
     background-color: whitesmoke;
     border-radius:50px 50px 50px 50px;
 }
+.about
+{
+    background-color: pink;
+}
+.about h1{
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 3px solid aliceblue;
+    font-weight: bold;
+}
+.about1{
+    background-color: white;
+    border-radius:80px 80px 80px 80px;
+}
+.about1 p{
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color:rgb(244, 127, 147);
+    text-align: justify;
+
+}
