@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
-    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     
     <title>Portfolio 1</title>
 </head>
@@ -16,7 +16,7 @@
         <div class="row">
             <nav class="navbar navbar-expand-lg  bgo fixed-top" >
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#"><img src="images/hey.png" alt="" class="mx-3 w-100" height="50"></a>
+                  <a class="navbar-brand" href="#"><img src="{% static 'images/hey.png' %}" alt="" class="mx-3 w-100" height="50"></a>
                   <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -54,7 +54,7 @@
                     <div class="col-sm-8 m-auto">
                         <div id="profile" ></div>
                         <div class="text-center text-light" style="margin-top:-120px ;font-family:cursive ;">
-                            <h2 class="m-auto fs-1" id="name">-Ayushi Gupta-</h2>
+                            <h2 class="m-auto fs-1" id="name">-Tom Mercy-</h2>
                             <h6 class="mt-4">Web Developer</h6>
                             <ul class="ul1">
                                 <li><a href="" ><i class="fa-solid fa-envelope"></i></a></li>
@@ -79,12 +79,12 @@
             <div class="container my-3">
                 <div class="row mx-4">
                     <div class="col-sm-8">
-                        <h3 class="fw-bold tx fs-1 py-3">Hello! <br>I'm Ayushi.</h3>
+                        <h3 class="fw-bold tx fs-1 py-3">Hello! <br>I'm Tom.</h3>
                         <p class="text-left  fs-5 text-left py-3">A full-stack web developer. Currently, pursuing bachlor's degree in Computer Science & Engineering. I have excellent knowledge of HTML CSS, JavaScript, Python and Database, I also have good command in frameworks like Bootstrap and Django. I'm always excited for opportunity to learn the new and cutting edge technologies in web development field. I'm a self-improving , confident and a good learner.</p>
                         <a href="#contact"><button type="button" class="btn rounded-pill fw-bold p-3" id="btn">CONTACT ME      <i class="fa-solid fa-arrow-right"></i></button></a>
                     </div>
                     <div class="col-sm-4 mt-3 text-end">
-                        <img src="images/user-3.jpg" class="w-75 rounded-5 me-5" alt="" height="350" id="img">
+                        <img src="{% static 'images/user-3.jpg' %}" class="w-75 rounded-5 me-5" alt="" height="350" id="img">
                     </div>
                 </div>
             </div>
@@ -108,7 +108,7 @@
                             </div>
                           </div>
                           <div class="col-md-4">
-                            <img src="images/html.png" class="img-fluid rounded-circle my-2" alt="...">
+                            <img src="{% static 'images/html.png' %}" class="img-fluid rounded-circle my-2" alt="...">
                           </div>
                         </div>
                       </div>
@@ -121,7 +121,7 @@
                     <div class="card  mt-3 skill mx-3  w-50" style="margin: auto;">
                       <div class="row lg-0">
                         <div class="col-md-4">
-                          <img src="images/css.png" class="img-fluid rounded-circle my-2" alt="...">
+                          <img src="{% static 'images/css.png' %}" class="img-fluid rounded-circle my-2" alt="...">
                         </div>
                         <div class="col-md-8">
                           <div class="card-body">
@@ -142,7 +142,7 @@
                           </div>
                         </div>
                         <div class="col-md-4">
-                          <img src="images/js.png" class="img-fluid rounded-circle my-2" alt="...">
+                          <img src="{% static 'images/js.png' %}" class="img-fluid rounded-circle my-2" alt="...">
                         </div>
                       </div>
                     </div>
@@ -155,7 +155,7 @@
                     <div class="card skill mx-3 mt-3   w-50" style="margin: auto;">
                       <div class="row lg-0">
                         <div class="col-md-4">
-                          <img src="images/python.png" class="img-fluid rounded-circle mt-3" alt="...">
+                          <img src="{% static 'images/python.png' %}" class="img-fluid rounded-circle mt-3" alt="...">
                         </div>
                         <div class="col-md-8">
                           <div class="card-body">
@@ -176,7 +176,7 @@
                           </div>
                         </div>
                         <div class="col-md-4">
-                          <img src="images/mysql.png" class="img-fluid rounded-circle my-2" alt="...">
+                          <img src="{% static 'images/mysql.png' %}" class="img-fluid rounded-circle my-2" alt="...">
                         </div>
                       </div>
                     </div>
@@ -191,25 +191,25 @@
                 <div class="container">
                     <div class="row my-5">
                       <div class="card fr rounded-5 my-2" >
-                        <img src="images/bootstrap.png" class="card-img-top my-1" alt="...">
+                        <img src="{% static 'images/bootstrap.png' %}" class="card-img-top my-1" alt="...">
                         <div class="card-body">
                           <p class="card-text fw-bold tx fs-5 text-center">Bootstrap</p>
                         </div>
                       </div>
                       <div class="card fr rounded-5 my-2" >
-                        <img src="images/django.png" class="card-img-top my-1" alt="...">
+                        <img src="{% static 'images/django.png' %}" class="card-img-top my-1" alt="...">
                         <div class="card-body">
                           <p class="card-text tx fw-bold fs-5 text-center">Django</p>
                         </div>
                       </div>
                       <div class="card fr rounded-5 my-2" >
-                        <img src="images/wamp.png" class="card-img-top my-1" alt="...">
+                        <img src="{% static 'images/wamp.png' %}" class="card-img-top my-1" alt="...">
                         <div class="card-body">
                           <p class="card-text fw-bold tx fs-5 text-center">Wampserver</p>
                         </div>
                       </div>
                       <div class="card fr rounded-5 my-2 ">
-                        <img src="images/oracle.png" class="card-img-top my-1" alt="...">
+                        <img src="{% static 'images/oracle.png' %}" class="card-img-top my-1" alt="...">
                         <div class="card-body">
                           <p class="card-text fw-bold tx fs-5 text-center">Oracle</p>
                         </div>
@@ -230,7 +230,7 @@
             <div class="row mt-5">
               <div class="col-sm-3"></div>
               <div class="col-sm-2 border-5 edu">
-                <img src="images/uni.png" alt="" class="eduimg mb-3 ms-2 rounded-circle ">
+                <img src="{% static 'images/uni.png' %}" alt="" class="eduimg mb-3 ms-2 rounded-circle ">
               </div>
               <div class="col-sm-7 my-4">
                 <h4>Pursuing Bachlor's in Computer Scirnce & Engineering</h4>
@@ -238,7 +238,7 @@
               </div>
               <div class="col-sm-3"></div>
               <div class="col-sm-2 border-5 edu">
-                <img src="images/diploma.png" alt="" class="eduimg mb-3 ms-2 rounded-circle ">
+                <img src="{% static 'images/diploma.png' %}" alt="" class="eduimg mb-3 ms-2 rounded-circle ">
               </div>
               <div class="col-sm-7 mt-4">
                 <h4>Diploma in Mechanical Engineering (Production)</h4>
@@ -246,7 +246,7 @@
               </div>
               <div class="col-sm-3"></div>
               <div class="col-sm-2 border-5 edu">
-                <img src="images/inter.png" alt="" class="eduimg mb-3 ms-2 rounded-circle ">
+                <img src="{% static 'images/inter.png' %}" alt="" class="eduimg mb-3 ms-2 rounded-circle ">
               </div>
               <div class="col-sm-7 mt-4">
                 <h4>Intermediate</h4>
@@ -254,7 +254,7 @@
               </div>
               <div class="col-sm-3"></div>
               <div class="col-sm-2 border-5 edu ">
-                <img src="images/high.png" alt="" class="eduimg mb-3 ms-2 rounded-circle ">
+                <img src="{% static 'images/high.png' %}" alt="" class="eduimg mb-3 ms-2 rounded-circle ">
               </div>
               <div class="col-sm-7 mt-4">
                 <h4>Highschool</h4>
@@ -274,16 +274,16 @@
           <div class="container-fluid mt-5">
             <div class="row m-5">
               <div class="col-sm-3">
-                <img src="images/inter.png" alt="">
+                <img src="{% static 'images/inter.png' %}" alt="">
               </div>
               <div class="col-sm-3">
-                <img src="images/inter.png" alt="">
+                <img src="{% static 'images/inter.png' %}" alt="">
               </div>
               <div class="col-sm-3">
-                <img src="images/inter.png" alt="">
+                <img src="{% static 'images/inter.png' %}" alt="">
               </div>
               <div class="col-sm-3">
-                <img src="images/inter.png" alt="">
+                <img src="{% static 'images/inter.png' %}" alt="">
               </div>
             </div>
           </div>
