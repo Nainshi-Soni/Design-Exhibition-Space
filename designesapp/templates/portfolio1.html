@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    
+    <title>Portfolio 1</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- NAV START -->
+        <div class="row">
+            <nav class="navbar navbar-expand-lg  bgo fixed-top" >
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="images/hey.png" alt="" class="mx-3 w-100" height="50"></a>
+                  <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 mx-5 navbar-nav-scroll" >
+                      <li class="nav-item nav">
+                        <a class="nav-link" aria-current="page" href="#headbg">HOME</a>
+                      </li>
+                      <li class="nav-item nav">
+                        <a class="nav-link " href="#aboutme">ABOUT ME </a>
+                      </li>
+                      <li class="nav-item nav">
+                        <a class="nav-link " href="#skills">SKILLS</a>
+                      </li>
+                      <li class="nav-item nav">
+                        <a class="nav-link " href="#education">EDUCATION</a>
+                      </li>
+                      <li class="nav-item nav">
+                        <a class="nav-link " href="#projects">PROJECTS</a>
+                      </li>
+                      <li class="nav-item nav">
+                        <a class="nav-link " href="#contact">CONTACT</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+        </div>
+        <!-- NAV END -->
+
+        <!-- HEADER START -->
+        <div class="row"  id="headbg">
+            <div  id="header">
+                <div class="row">
+                    <div class="col-sm-8 m-auto">
+                        <div id="profile" ></div>
+                        <div class="text-center text-light" style="margin-top:-120px ;font-family:cursive ;">
+                            <h2 class="m-auto fs-1" id="name">-Ayushi Gupta-</h2>
+                            <h6 class="mt-4">Web Developer</h6>
+                            <ul class="ul1">
+                                <li><a href="" ><i class="fa-solid fa-envelope"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-square-threads"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-square-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- HEADER END -->
+
+        <!-- ABOUT ME START -->
+        <div class="row py-3" id="aboutme"></div>
+        <div class="row" >
+            <div class="col-sm-12">
+                <h2 class="text-center my-5 bgo text-light fw-bold">ABOUT ME</h2>
+            </div>
+            <div class="container my-3">
+                <div class="row mx-4">
+                    <div class="col-sm-8">
+                        <h3 class="fw-bold tx fs-1 py-3">Hello! <br>I'm Ayushi.</h3>
+                        <p class="text-left  fs-5 text-left py-3">A full-stack web developer. Currently, pursuing bachlor's degree in Computer Science & Engineering. I have excellent knowledge of HTML CSS, JavaScript, Python and Database, I also have good command in frameworks like Bootstrap and Django. I'm always excited for opportunity to learn the new and cutting edge technologies in web development field. I'm a self-improving , confident and a good learner.</p>
+                        <a href="#contact"><button type="button" class="btn rounded-pill fw-bold p-3" id="btn">CONTACT ME      <i class="fa-solid fa-arrow-right"></i></button></a>
+                    </div>
+                    <div class="col-sm-4 mt-3 text-end">
+                        <img src="images/user-3.jpg" class="w-75 rounded-5 me-5" alt="" height="350" id="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ABOUT ME END -->
+
+        <!-- SKILL START -->
+        <div class="row py-3" id="skills"></div>
+        <div class="container-fluid mt-5 " >
+            <div class="col-sm-12">
+                <h2 class="text-center  bgo text-light fw-bold">SKILLS</h2>
+            </div>
+            <div class="container-fluid bgo my-5" >
+                <div class="row mx-4">
+                    <div class="col-sm-6 mt-5 border-end border-2 border-light" >
+                      <div class="card skill mt-3  text-end  me-3 w-50" style="margin: auto;">
+                        <div class="row lg-0">
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title fs-4 mt-3 fw-bold">HTML</h5>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <img src="images/html.png" class="img-fluid rounded-circle my-2" alt="...">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6"></div>
+                </div>
+                <div class="row  mx-4">
+                  <div class="col-sm-6 border-end border-2 border-light"></div>
+                  <div class="col-sm-6">
+                    <div class="card  mt-3 skill mx-3  w-50" style="margin: auto;">
+                      <div class="row lg-0">
+                        <div class="col-md-4">
+                          <img src="images/css.png" class="img-fluid rounded-circle my-2" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title fs-4 mt-3 fw-bold">CSS</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row  mx-4">
+                  <div class="col-sm-6 border-end border-2 border-light" >
+                    <div class="card skill mt-3  text-end  me-3 w-50" style="margin: auto;">
+                      <div class="row lg-0">
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title fs-4 mt-3 fw-bold">JavaScript</h5>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <img src="images/js.png" class="img-fluid rounded-circle my-2" alt="...">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6"></div>
+                </div>
+                <div class="row  mx-4">
+                  <div class="col-sm-6 border-end border-2 border-light"></div>
+                  <div class="col-sm-6">
+                    <div class="card skill mx-3 mt-3   w-50" style="margin: auto;">
+                      <div class="row lg-0">
+                        <div class="col-md-4">
+                          <img src="images/python.png" class="img-fluid rounded-circle mt-3" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title mt-3 fw-bold fs-4">Python</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mx-4">
+                  <div class="col-sm-6 mb-5 border-end border-2 border-light" >
+                    <div class="card skill mt-3  text-end  me-3 w-50" style="margin: auto;">
+                      <div class="row lg-0">
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title fs-4 mt-3 fw-bold">MySQL</h5>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <img src="images/mysql.png" class="img-fluid rounded-circle my-2" alt="...">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3 class="text-center fw-bold text-decoration-underline mt-5 fs-2 tx">Frameworks & Toolkits</h3>
+                </div>
+                <div class="container">
+                    <div class="row my-5">
+                      <div class="card fr rounded-5 my-2" >
+                        <img src="images/bootstrap.png" class="card-img-top my-1" alt="...">
+                        <div class="card-body">
+                          <p class="card-text fw-bold tx fs-5 text-center">Bootstrap</p>
+                        </div>
+                      </div>
+                      <div class="card fr rounded-5 my-2" >
+                        <img src="images/django.png" class="card-img-top my-1" alt="...">
+                        <div class="card-body">
+                          <p class="card-text tx fw-bold fs-5 text-center">Django</p>
+                        </div>
+                      </div>
+                      <div class="card fr rounded-5 my-2" >
+                        <img src="images/wamp.png" class="card-img-top my-1" alt="...">
+                        <div class="card-body">
+                          <p class="card-text fw-bold tx fs-5 text-center">Wampserver</p>
+                        </div>
+                      </div>
+                      <div class="card fr rounded-5 my-2 ">
+                        <img src="images/oracle.png" class="card-img-top my-1" alt="...">
+                        <div class="card-body">
+                          <p class="card-text fw-bold tx fs-5 text-center">Oracle</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SKILL END -->
+        
+        <!-- EDUCATION START -->
+        <div class="row py-3 text-light" id="education"></div>
+        <div class="row" >
+          <div class="col-sm-12">
+              <h2 class="text-center mt-5 bgo text-light fw-bold">EDUCATION</h2>
+          </div>
+          <div class="container">
+            <div class="row mt-5">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-2 border-5 edu">
+                <img src="images/uni.png" alt="" class="eduimg mb-3 ms-2 rounded-circle ">
+              </div>
+              <div class="col-sm-7 my-4">
+                <h4>Pursuing Bachlor's in Computer Scirnce & Engineering</h4>
+                <p>Kali Charan Nigam Institude Of Technology , Banda ,U.P. <br>2022-25</p>
+              </div>
+              <div class="col-sm-3"></div>
+              <div class="col-sm-2 border-5 edu">
+                <img src="images/diploma.png" alt="" class="eduimg mb-3 ms-2 rounded-circle ">
+              </div>
+              <div class="col-sm-7 mt-4">
+                <h4>Diploma in Mechanical Engineering (Production)</h4>
+                <p>Government Polytechnic Naraini, Banda, U.P. <br>2019-22</p>
+              </div>
+              <div class="col-sm-3"></div>
+              <div class="col-sm-2 border-5 edu">
+                <img src="images/inter.png" alt="" class="eduimg mb-3 ms-2 rounded-circle ">
+              </div>
+              <div class="col-sm-7 mt-4">
+                <h4>Intermediate</h4>
+                <p>Saraswati Balika Vidya Mandir, Kenpath, Banda, U.P. <br>2018-19</p>
+              </div>
+              <div class="col-sm-3"></div>
+              <div class="col-sm-2 border-5 edu ">
+                <img src="images/high.png" alt="" class="eduimg mb-3 ms-2 rounded-circle ">
+              </div>
+              <div class="col-sm-7 mt-4">
+                <h4>Highschool</h4>
+                <p>Saraswati Balika Vidya Mandir, Kenpath, Banda, U.P. <br>2016-17</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- EDUCATION END -->
+
+        <!-- PROJECTS START -->
+        <div class="row py-3" id="projects"></div>
+        <div class="row" >
+          <div class="col-sm-12">
+              <h2 class="text-center mt-5 bgo text-light fw-bold ">PROJECTS</h2>
+          </div>
+          <div class="container-fluid mt-5">
+            <div class="row m-5">
+              <div class="col-sm-3">
+                <img src="images/inter.png" alt="">
+              </div>
+              <div class="col-sm-3">
+                <img src="images/inter.png" alt="">
+              </div>
+              <div class="col-sm-3">
+                <img src="images/inter.png" alt="">
+              </div>
+              <div class="col-sm-3">
+                <img src="images/inter.png" alt="">
+              </div>
+            </div>
+          </div>
+        <!-- PROJECTS END -->
+
+        <!-- CONTANCT START -->
+        <div class="row py-3 text-light" id="contact"></div>
+        <div class="container-fluid bgo" >
+          <div class="col-sm-8 text-light p-5 text-center m-auto">
+              <h1>Hire Me !</h1>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum aperiam, mollitia architecto illo cum dolore eaque labore modi officiis. Consectetur placeat quod voluptatem voluptatibus necessitatibus debitis, doloremque dolorem quia ipsam!</p>
+              <a href="#welcome"><button type="button" class="btn btn-light rounded-pill mt-3 p-3 fw-bold" id="btn2">CONTACT ME</button></a>
+          </div>
+        </div>
+        <div class="container-fluid" id="welcome">
+          <div class="row" id="contactimg" >
+            <div class="col-sm-6" >
+              <table class="table m-auto mt-5 fw-bold fs-5 w-75" height="350" >
+                <tr>
+                  <td>Email :</td>
+                  <td>ayushi1010gupta@gmail.com</td>
+                </tr>
+                <tr>
+                  <td>Mobile No. :</td>
+                  <td>+91 9140684216</td>
+                </tr>
+                <tr>
+                  <td>Address :</td>
+                  <td>Chhoti Bazar, Banda, U.P. <br>210001</td>
+                </tr>
+              </table>
+              </div>
+              <div class="col-sm-6 mt-5 ">
+                <form action="" class="form-group" id="form">
+                  <h1 class="my-5 text-center text-white">Welcome</h1>
+                  <input type="text" class="form-control inp my-3 rounded-5" placeholder="Your first name">
+                  <input type="text" class="form-control inp my-3 rounded-5" placeholder="Your last name">
+                  <input type="email" class="form-control inp my-3 rounded-5" placeholder="Your email address">
+                  <input type="text" class="form-control inp my-3 rounded-5" placeholder="Your subject of this message">
+                  <textarea name="" id="" rows="4" class="form-control inp my-3 rounded-5"></textarea>
+                </form>
+              </div>
+          </div>           
+        </div> 
+        <!-- CONTACT END -->
+    </div>
+    <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+</body>
+</html>
