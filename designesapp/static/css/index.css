@@ -47,6 +47,7 @@
 .about1 p{
    /* font-size: 1.1rem;
     line-height: 1.6;*/
+    color: rgb(18, 18, 18);
     margin-bottom: 15px;
     text-align: justify;
 
@@ -67,3 +68,27 @@
     border: 2px solid lawngreen;
     background-color: rgb(245, 245, 245,0.3);
 }
+
+/*==================footer stat=======================*/
+
+.footer span
+{
+    color: #37517e;
+}
+.footer h5{
+    color: #37517e;
+    font-weight: bold;
+}
+.footer ul li{
+    list-style-type: none;
+
+}
+.footer ul li a{
+    text-decoration: none;
+    color: black;
+}
+.footer ul li a:hover{
+    color: #37517e;
+    font-weight: bolder;
+}
+/*========================footer end==================*/
