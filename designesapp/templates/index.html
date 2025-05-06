@@ -1,66 +1,87 @@
 <!doctype html>
 <html lang="en">
-    {% load static %}
+{% load static %}
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Design Exhibition Space</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
-    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Design Exhibition Space</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+  <link rel="stylesheet" href="{% static 'css/index.css' %}">
 </head>
 
 <body>
-    <div class="container-fluid">
-      <!-- =================================================Nav bar start=================================================================== -->
+  <div class="container-fluid contain">
+    <!-- =================================================Nav bar start=================================================================== -->
 
-      <div class="row navv">
-        <div class="col-md-12">
-          <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img src="" class="" alt="" style="height:7vh;">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold fs-5">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">About Us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Services</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Login</a>
-                  </li>
-                </ul>
-                <!-- <form class="d-flex" role="search"> 
+    <div class="row navv">
+      <div class="col-md-12">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <span class="des fs-4">Design Exhibition Space</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold mt-2">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#aboutt">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Login</a>
+                </li>
+              </ul>
+              <!-- <form class="d-flex" role="search"> 
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline" type="submit"><i class="fa-search"></i></button>
                 </form>-->
-              </div>
             </div>
-          </nav>
-      
-        </div>
+          </div>
+        </nav>
+
       </div>
+    </div>
 
-      <!-- ======================================================Nav bar end================================================================ -->
+    <!-- ======================================================Nav bar end================================================================ -->
 
-      <!-- =======================================================About Start================================================================== -->
+    <!-- =========================================================slider start============================================================ -->
+    <div class="row mt-3">
+      <div class="col-md-1"></div>
+      <div class="col-md-6 m-auto slidecontent">
+        <span class="fs-1 fw-bold">Better Solutions For Your <br> Work</span>
+        <p class="fs-5 fw-bold">We are team of talented designers making websites with Bootstrap</p>
+        <button class="rounded-pill  p-3 mt-1 fw-bold">Get Started</button>
+      </div>
+      <div class="col-md-5 m-auto">
+        <img src="{% static 'images/slide.png' %}" width="100%" alt="Please wait it takes some time">
+      </div>
+    </div>
 
-     <div class="row about mt-5">
-      <div class="container">
-        <div class="row">
+    <!-- =======================================================slider end================================================================ -->
+  </div>
+
+  <div class="container-fluid">
+
+    <!-- =======================================================About Start================================================================== -->
+
+    <div class="row mt-5">
+      <div class="container" id="aboutt">
+        <div class="row about">
           <div class="col-md-5"></div>
           <div class="col-md-2 text-center">
             <h1>
@@ -69,37 +90,56 @@
           </div>
           <div class="col-md-5"></div>
         </div>
-        <div class="row about1 m-4">
-          <div class="col-md-12 p-4">
-            <p>
-              Welcome to <strong>Design Exhibition Space </strong> – your one-stop destination for beautifully crafted 
-              <strong>portfolio</strong>, <strong>resume</strong>, and <strong>digital card templates</strong>. Whether you're a creative professional, a job seeker, or someone looking to make a lasting impression, 
-              our collection of modern, customizable designs has you covered.
-            </p>
-        
-            <p>
-              Our platform is built using the latest technologies including 
-              <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, and <strong>Python</strong>, ensuring a seamless, fast, and user-friendly experience.
-            </p>
-        
-            <p>
-              At Design Exhibition Space, we believe that great design should be accessible to everyone. Our mission is to 
-              empower users to present their skills and stories in the most impactful way possible, without needing 
-              advanced technical knowledge.
-            </p>
-        
-            <p>
-              We provides differents types of templatesof portfolio and resumes. Whether you want to build a sleek portfolio, a standout resume, or an eye-catching digital card – we've got you covered.
-            </p>
+        <div class="container">
+          <div class="row about1 m-4">
+            <div class="row">
+              <div class="col-md-6">
+                <p>
+                  Welcome to <strong>Design Exhibition Space </strong> – your one-stop destination for beautifully
+                  crafted
+                  <strong>portfolio</strong>, <strong>resume</strong>, and <strong>digital card templates</strong>.
+                  Whether you're a creative professional, a job seeker, or someone looking to make a lasting impression,
+                  our collection of modern, customizable designs has you covered.
+                </p>
+                <p>
+                  At Design Exhibition Space, we believe that great design should be accessible to everyone. Our mission
+                  is to
+                  empower users to present their skills and stories in the most impactful way possible, without needing
+                  advanced technical knowledge.
+                </p>
+              </div>
+              <div class="col-md-6">
+                <p>
+                  Our platform is built using the latest technologies including
+                  <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, and <strong>Python</strong>,
+                  ensuring a seamless, fast, and user-friendly experience.
+                </p>
+                <p>
+                  We provides differents types of templatesof portfolio and resumes. Whether you want to build a sleek
+                  portfolio, a standout resume, or an eye-catching digital card – we've got you covered.
+                </p>
+
+                <button class="rounded-1  py-2 px-5 mt-1 fw-bold">Read More</button>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
-     </div>
-
-      <!-- =========================================================About end================================================================== -->
     </div>
-    <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"crossorigin="anonymous"></script>
+
+    <!-- =========================================================About end================================================================== -->
+
+    <!-- ========================================================Login start================================================================ -->
+
+
+
+    <!-- =============================================================login end=============================================================== -->
+  </div>
+  <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
