@@ -6,3 +6,5 @@ from django.shortcuts import render
 
 def portfolio1(req):
     return render(req,"portfolio1.html")
+def portfolio2(req):
+    return render(req,"portfolio2.html")

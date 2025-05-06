@@ -43,7 +43,7 @@
 }
 #headbg
 {
-    background-image: url(../images/cover_bg_3.jpg);
+    background-image: url(../images/port1/cover_bg_3.jpg);
     background-size: cover;
     position: relative;
 }
@@ -58,7 +58,7 @@
     min-height: 200px;
     max-width: 200px;
     margin:150px auto;
-    background-image: url(../images/user-3.jpg);
+    background-image: url(../images/port1/user-3.jpg);
     background-size: cover;
     border-radius: 50%;
 }
@@ -145,7 +145,7 @@
 }
 #contactimg
 {
-    background-image: url(../images/cover_bg_1.jpg);
+    background-image: url(../images/port1/cover_bg_1.jpg);
     background-size: cover;
     
 }
