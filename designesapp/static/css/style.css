@@ -1,179 +1,371 @@
-/*body
-{
-    background-color: black;
-}*/
-.tx
-{
-    color: brown;
+.navbar{
+    background-color:#333b50;
 }
-#btn
-{
+.nav-item{
+    padding: 4px;
+}
+.nav-link{
+    color:greenyellow;
+}
+.nav-link:hover{
+    border-radius: 15px;
+    border:1px solid white;
     color:white;
-    background-color:brown; 
+    box-shadow:0px 0px 5px white;
 }
-#btn:hover
-{
-    color:brown; 
-    border: 2px solid brown; 
+#header{
+    min-height:100%;
+    background-image: url(image/one.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    position:relative;
+    background-repeat: no-repeat;
 }
-#navbarScroll
-{
-  margin-left:38%;
+.bg{
+    background-color:#4d54668c;
 }
-.nav
-{
-    padding:5px;
-    font-size: 18px;
-    margin-left: 5px;
+.split-text-container{
+    font-size:5rem;
+    font-family:Lora, serif;
+    font-optical-sizing: auto;
+    font-weight:bold;
+    font-style: normal;
+    display:inline-block;
+    text-transform: uppercase;
+    color: #333b50;
+    overflow: hidden;
 }
-.nav a
-{
-    color:white;
-    font-weight:400;
+.split-text-container ul{
+    list-style-type: none;font-size: 25px;
 }
-.nav:hover
-{
-    background-color:rgba(255, 255, 255, 0.537);
-    border-radius: 5px;
+.split-text-container ul li{
+    display: inline-block;
+    background-color:greenyellow;
+    padding: 5px;
+    border-radius: 50%;
+    margin: 5px;
 }
-.nav a:hover
-{
-    color:brown;
-    font-weight: bold;
+.split-text-container ul li:hover{
+    transform: scale(1.2);
+    transition: 1s ease;
+    background-color: #323742;
 }
-#headbg
-{
-    background-image: url(../images/cover_bg_3.jpg);
+.split-text-container ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+}
+.text-part {
+    display: block;
+}
+
+#aboutme div{
+    background-color:#4d5466 ;
+    text-align: justify;
+    box-shadow:0px 5px 15px white ,0px 0px 15px #4d5466 ;
+    border-radius:0px 25px 25px 0px;
+    color: white;
+}
+#aboutme button{
+    float: right; 
+    background-color: greenyellow;
+    color:#4d5466;
+}
+#aboutme button:hover{
+    background-color:transparent;
+    border:2px solid greenyellow;
+    box-shadow: 0px 0px 10px greenyellow;
+    color:greenyellow;
+}
+#skills{
+    min-height:750px;
+    background-size:cover;
+    background-image: url(image/four.jpeg);
+    background-attachment: fixed;
+    animation: all 1s ease;
+}
+.heading{  
+    margin-top: 50px;
+    font-size:3rem;
+    text-shadow: 5px 5px 5px rgb(100, 100, 100);
+}
+#sbar  li{
+    list-style-type: none;
+    padding:8px;
+    font-size: large;
+}
+.bar{
+    display:block;
+    height: 20px;
+    overflow:hidden ;
+    transition: ease-in-out cubic-bezier(0.25, 0.8, 0.25,1);
+    text-align:center;
+}
+.bar span{
+    height: 12px;
+    float: left;
+    background:greenyellow ;
+}
+
+.html{
+    width: 85%;
+    animation: html 5s ease;
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+.css{
+    width: 80%;
+    animation: css 5s ease;
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+.bootstrap{
+    width: 75%;
+    animation: bootstrap 5s ease;
+}
+@keyframes bootstrap{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+.js{
+    width: 70%;
+    animation: js 5s ease;
+}
+@keyframes js{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+.python{
+    width: 85%;
+    animation: python 5s ease;
+}
+@keyframes python{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+.django{
+    width: 75%;
+    animation: django 5s ease;
+}
+@keyframes django{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+.database{
+    width: 80%;
+    animation: database 5s ease;
+}
+@keyframes database{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+.gandg{
+    width: 75%;
+    animation: gandg 5s ease;
+}
+@keyframes gandg{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+#education{
+    height: 100%;
+    background-image: url(image/seven.jpg);
     background-size: cover;
-    position: relative;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
 }
-#header
-{
-    min-height:640px;
-    max-width:100%;
-    background-color: rgba(165, 42, 42, 0.336);
+#education .col-sm-12{
+    background-color: #22252bcb;
 }
-#profile
-{
-    min-height: 200px;
-    max-width: 200px;
-    margin:150px auto;
-    background-image: url(../images/user-3.jpg);
-    background-size: cover;
+.left-arrow{
+    position: absolute; height:0;width: 0;top:20px; z-index: 1;border-top: 15px solid transparent;border-bottom: 15px solid transparent;border-left: 10px solid white;right: -10px;
+}
+.right-arrow{
+    position: absolute; height:0;width: 0;top:20px; z-index: 1;border-top: 15px solid transparent;border-bottom: 15px solid transparent;border-right: 10px solid white;left: -10px;
+}
+.dot{
+    height: 25px;
+    width: 25px;
+    background-color: greenyellow;
     border-radius: 50%;
 }
-#profile:hover
-{
-    transform:scale(1.2,1.2);
-    transition: 1.5s ease;
+.leftBox{
+    left:18%;
+    text-align: justify;
+    box-shadow: -5px 5px 10px black;
 }
-#name
-{
-    transform: rotate(-10deg);
+
+.leftBox .dot{
+    position: absolute;
+    right:-36%;
+    top:22px;
+    z-index: 10;
 }
-#name:hover
-{
-    transform: rotate(0deg);
-    transform: scale(1.2,1.2);
-    transition: 1.5s ease;
+.rightBox{
+    right: -58%;
+    text-align: justify;
+    box-shadow: 5px 10px 15px black;
 }
-.ul1
-{
-    list-style-type: none;
-    margin-left: -35px;
+.rightBox .dot{
+    position: absolute;
+    left:-32%;
+    top:20px;
+    z-index: 10;
 }
-.ul1 li
-{
+.line{
+    position: relative;
+}
+.line::after{
+    content: '';
+    width:6px;
+    height:58%;
+    background: greenyellow;
+    position:absolute;
+    top:200px;
+    left:50%;
+    z-index:2;
+    margin-left: 10px;
+    overflow:hidden;
+}
+#projects{
+    background:linear-gradient(90deg ,black,#333b50,#323742,#333b50,black);
+    align-content: center;
+    height:120%;
+    display: flex;
+    box-shadow: 0px 10px 15px black;
+}
+#projects .card{
     display: inline-block;
-    font-size:x-large;
-    padding: 5px;
-}
-.ul1 li a
-{
-    color: white;
-}
-.ul1 li a:hover
-{
-    font-size:xx-large;
-    transition: 0.5s ease;
-}
-#img
-{
-    box-shadow: 0px 0px 15px black;
-    
-}
-.skill
-{
-    //box-shadow:0px 0px 15px ;
-    //background-color:brown;
-}
-.skill:hover
-{
-    transform: scale(1.05,1.05);
-    transition: 1.5s ease;
-    box-shadow:0px 0px 15px brown;
-}
-.bod
-{
-    border-right: 5px solid brown;
-}
-.fr
-{
-    width: 12rem;
-    margin: auto;
-    background-color:whitesmoke;
-    box-shadow: 0px 0px 15px brown;
-}
-.fr:hover
-{
-    flex-direction:column-reverse;
-    box-shadow:0px 0px 15px brown;
-}
-.edu
-{
-    border-left: 4px solid brown;
-}
-.eduimg
-{
-    min-height: 150px;
-    max-width: 150px;
-    box-shadow: 0px 0px 15px brown;
-}
-.bgo
-{
-    background: linear-gradient(90deg,rgb(107, 7, 7),rgba(192, 34, 34, 0.822),rgb(131, 32, 32),rgb(27, 0, 0));
-}
-#contactimg
-{
-    background-image: url(../images/cover_bg_1.jpg);
-    background-size: cover;
-    
-}
-#btn2
-{
-    color:brown;
-    
-}
-#btn2:hover
-{
+    position: relative;
+    width: 15rem;
+    margin:15px;
+    border: none;
     background-color: transparent;
-    border: 1px solid white;
-    color: white;
 }
-#form
-{
-    background-color:rgba(165, 42, 42, 0.336) ;
-    border-radius: 50px 0px 0px 50px;
-    padding: 5px 25px 25px 25px ;
+#projects .card .slide1{
+    transition: 0.7s;
+    position: relative;
+    display: flex;
+    z-index: 2;
+    transform: translateY(100px);
+    box-shadow: 5px 5px 2px greenyellow, -5px -5px 2px white;
 }
-.inp
-{
-    font-size: 20px;
-    text-align: center;
-    background-color: rgba(245, 245, 245, 0.699);
+#projects .card:hover .slide1{
+    transform:translateY(0px);
+    box-shadow: none;
 }
-.inp:focus
-{
-    background-color:rgba(245, 245, 245, 0.699);
-    border:1px solid white;
+#projects .card .slide2{
+    transition: 0.8s;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    align-items:center;
+    z-index: 1;
+    background-color: #fff;
+    border-radius: 0px 0px 5px 5px;
+    transform: translateY(-100px);
 }
+#projects .card:hover .slide2{
+    transform: translateY(0px);
+}
+#contact{
+    height:120%;
+    background-image: url(image/five.jpeg);
+    background-size:cover ;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+#contact .bg{
+    background-color: #323742a9;
+}
+.form{
+    background-color:rgba(0, 0, 0, 0.568);
+    text-align: justify;
+}
+.form h1{
+    color: greenyellow;
+}
+.form .btn{
+    background-color: greenyellow;
+}
+.form .btn:hover{
+    background-color: transparent;
+    border: 2px solid greenyellow;
+    color: greenyellow;
+    box-shadow: 0px 0px 15px greenyellow;
+}
+.form ul{
+    list-style-type: none;font-size: 18px;
+}
+.form ul li{
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+}
+.form ul li:hover{
+    transform: scale(1.2);
+    transition: 1s ease;
+    background-color:#ffffff56;
+}
+.form ul li a{
+    text-decoration: none;
+    color:greenyellow;
+    font-weight: bolder;
+}
+#hireMe{
+    background:linear-gradient(90deg ,black,#333b50,#323742,#333b50,black) ;
+    text-align: justify;
+}
+#hireMe .btn:hover{
+    background-color: transparent;
+    border: 2px solid greenyellow;
+    color: greenyellow;
+    box-shadow: 0px 0px 10px greenyellow;
+}
+#footer{
+    background:linear-gradient(90deg ,black,#333b50,#323742,#333b50,black) ;
+    height: 100px;
+}
+
+
+
+
+
