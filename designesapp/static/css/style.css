@@ -1,0 +1,179 @@
+/*body
+{
+    background-color: black;
+}*/
+.tx
+{
+    color: brown;
+}
+#btn
+{
+    color:white;
+    background-color:brown; 
+}
+#btn:hover
+{
+    color:brown; 
+    border: 2px solid brown; 
+}
+#navbarScroll
+{
+  margin-left:38%;
+}
+.nav
+{
+    padding:5px;
+    font-size: 18px;
+    margin-left: 5px;
+}
+.nav a
+{
+    color:white;
+    font-weight:400;
+}
+.nav:hover
+{
+    background-color:rgba(255, 255, 255, 0.537);
+    border-radius: 5px;
+}
+.nav a:hover
+{
+    color:brown;
+    font-weight: bold;
+}
+#headbg
+{
+    background-image: url(../images/cover_bg_3.jpg);
+    background-size: cover;
+    position: relative;
+}
+#header
+{
+    min-height:640px;
+    max-width:100%;
+    background-color: rgba(165, 42, 42, 0.336);
+}
+#profile
+{
+    min-height: 200px;
+    max-width: 200px;
+    margin:150px auto;
+    background-image: url(../images/user-3.jpg);
+    background-size: cover;
+    border-radius: 50%;
+}
+#profile:hover
+{
+    transform:scale(1.2,1.2);
+    transition: 1.5s ease;
+}
+#name
+{
+    transform: rotate(-10deg);
+}
+#name:hover
+{
+    transform: rotate(0deg);
+    transform: scale(1.2,1.2);
+    transition: 1.5s ease;
+}
+.ul1
+{
+    list-style-type: none;
+    margin-left: -35px;
+}
+.ul1 li
+{
+    display: inline-block;
+    font-size:x-large;
+    padding: 5px;
+}
+.ul1 li a
+{
+    color: white;
+}
+.ul1 li a:hover
+{
+    font-size:xx-large;
+    transition: 0.5s ease;
+}
+#img
+{
+    box-shadow: 0px 0px 15px black;
+    
+}
+.skill
+{
+    //box-shadow:0px 0px 15px ;
+    //background-color:brown;
+}
+.skill:hover
+{
+    transform: scale(1.05,1.05);
+    transition: 1.5s ease;
+    box-shadow:0px 0px 15px brown;
+}
+.bod
+{
+    border-right: 5px solid brown;
+}
+.fr
+{
+    width: 12rem;
+    margin: auto;
+    background-color:whitesmoke;
+    box-shadow: 0px 0px 15px brown;
+}
+.fr:hover
+{
+    flex-direction:column-reverse;
+    box-shadow:0px 0px 15px brown;
+}
+.edu
+{
+    border-left: 4px solid brown;
+}
+.eduimg
+{
+    min-height: 150px;
+    max-width: 150px;
+    box-shadow: 0px 0px 15px brown;
+}
+.bgo
+{
+    background: linear-gradient(90deg,rgb(107, 7, 7),rgba(192, 34, 34, 0.822),rgb(131, 32, 32),rgb(27, 0, 0));
+}
+#contactimg
+{
+    background-image: url(../images/cover_bg_1.jpg);
+    background-size: cover;
+    
+}
+#btn2
+{
+    color:brown;
+    
+}
+#btn2:hover
+{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+#form
+{
+    background-color:rgba(165, 42, 42, 0.336) ;
+    border-radius: 50px 0px 0px 50px;
+    padding: 5px 25px 25px 25px ;
+}
+.inp
+{
+    font-size: 20px;
+    text-align: center;
+    background-color: rgba(245, 245, 245, 0.699);
+}
+.inp:focus
+{
+    background-color:rgba(245, 245, 245, 0.699);
+    border:1px solid white;
+}
