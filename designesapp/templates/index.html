@@ -13,157 +13,254 @@
 </head>
 
 <body>
-  <div class="container-fluid contain">
-    <!-- =================================================Nav bar start=================================================================== -->
-
-    <div class="row navv">
+  <div class="container-fluid">
+    <div class="row contain">
       <div class="col-md-12">
-        <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <span class="des fs-4">Design Exhibition Space</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold mt-2">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="{% url 'index'%}">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#aboutt">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Services</a>
-                </li>
-                <li class="nav-item">
+        <div class="container-fluid">
+          <!-- =================================================Nav bar start=================================================================== -->
+
+          <div class="row navv">
+            <div class="col-md-12">
+              <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <span class="des fs-4">Design Exhibition Space</span>
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold mt-2">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'index'%}">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#aboutt">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#service">Services</a>
+                      </li>
+                      <!-- <li class="nav-item"> 
                   <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Login</a>
-                </li>
-              </ul>
-              <!-- <form class="d-flex" role="search"> 
+                </li>-->
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Login</a>
+                      </li>
+                    </ul>
+                    <!-- <form class="d-flex" role="search"> 
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline" type="submit"><i class="fa-search"></i></button>
                 </form>-->
+                  </div>
+                </div>
+              </nav>
+
             </div>
           </div>
-        </nav>
 
-      </div>
-    </div>
+          <!-- ======================================================Nav bar end================================================================ -->
 
-    <!-- ======================================================Nav bar end================================================================ -->
-
-    <!-- =========================================================slider start============================================================ -->
-    <div class="row mt-3">
-      <div class="col-md-1"></div>
-      <div class="col-md-6 m-auto slidecontent">
-        <span class="fs-1 fw-bold">Better Solutions For Your <br> Work</span>
-        <p class="fs-5 fw-bold">We are team of talented designers making websites with Bootstrap</p>
-        <button class="rounded-pill  p-3 mt-1 fw-bold">Get Started</button>
-      </div>
-      <div class="col-md-5 m-auto">
-        <img src="{% static 'images/slide.png' %}" width="100%" alt="Please wait it takes some time">
-      </div>
-    </div>
-
-    <!-- =======================================================slider end================================================================ -->
-  </div>
-
-  <div class="container-fluid">
-
-    <!-- =======================================================About Start================================================================== -->
-
-    <div class="row mt-5">
-      <div class="container" id="aboutt">
-        <div class="row about">
-          <div class="col-md-5"></div>
-          <div class="col-md-2 text-center">
-            <h1>
-              ABOUT US
-            </h1>
+          <!-- =========================================================slider start============================================================ -->
+          <div class="row mt-3">
+            <div class="col-md-1"></div>
+            <div class="col-md-6 m-auto slidecontent">
+              <span class="fs-1 fw-bold">Better Solutions For Your <br> Work</span>
+              <p class="fs-5 fw-bold">We are team of talented designers making websites with Bootstrap</p>
+              <button class="rounded-pill  p-3 mt-1 fw-bold">Get Started</button>
+            </div>
+            <div class="col-md-5 m-auto">
+              <img src="{% static 'images/slide.png' %}" width="100%" alt="Please wait it takes some time">
+            </div>
           </div>
-          <div class="col-md-5"></div>
+
+          <!-- =======================================================slider end================================================================ -->
+
         </div>
+      </div>
+    </div>
+
+      <!-- =======================================================About Start================================================================== -->
+
+      <div class="row mt-5">
+        <div class="container" id="aboutt">
+          <div class="row about">
+            <div class="col-md-5"></div>
+            <div class="col-md-2 text-center">
+              <h1>
+                ABOUT US
+              </h1>
+            </div>
+            <div class="col-md-5"></div>
+          </div>
+          <div class="container">
+            <div class="row about1 m-4">
+              <div class="row">
+                <div class="col-md-6">
+                  <p>
+                    Welcome to <strong>Design Exhibition Space </strong> – your one-stop destination for beautifully
+                    crafted
+                    <strong>portfolio</strong>, <strong>resume</strong>, and <strong>digital card templates</strong>.
+                    Whether you're a creative professional, a job seeker, or someone looking to make a lasting
+                    impression,
+                    our collection of modern, customizable designs has you covered.
+                  </p>
+                  <p>
+                    At Design Exhibition Space, we believe that great design should be accessible to everyone. Our
+                    mission
+                    is to
+                    empower users to present their skills and stories in the most impactful way possible, without
+                    needing
+                    advanced technical knowledge.
+                  </p>
+                </div>
+                <div class="col-md-6">
+                  <p>
+                    Our platform is built using the latest technologies including
+                    <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, and
+                    <strong>Python</strong>,
+                    ensuring a seamless, fast, and user-friendly experience.
+                  </p>
+                  <p>
+                    We provides differents types of templatesof portfolio and resumes. Whether you want to build a sleek
+                    portfolio, a standout resume, or an eye-catching digital card – we've got you covered.
+                  </p>
+
+                  <button class="rounded-1  py-2 px-5 mt-1 fw-bold">Read More</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- =========================================================About end================================================================== -->
+
+      <!-- ============================================================services ================================================================= -->
+
+      <div class="row" id="service">
+        <div class="container-fluid">
+          <div class="row" style="justify-content: center;">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h3 class="card-title">Portfolio</h3>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <button class="rounded-pill p-2">
+                  <a href="#" class="card-link">Read more</a>
+                </button>
+              </div>
+            </div>
+            <div class="card ms-5" style="width: 18rem;">
+              <div class="card-body">
+                <h3 class="card-title">Resumes</h3>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <button class="rounded-pill p-2">
+                  <a href="#" class="card-link">Read more</a>
+                </button>
+              </div>
+            </div>
+            <div class="card ms-5" style="width: 18rem;">
+              <div class="card-body">
+                <h3 class="card-title">Card</h3>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <button class="rounded-pill p-2">
+                  <a href="#" class="card-link">Read more</a>
+                </button>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+
+      <!-- ===============================================================services end========================================================== -->
+
+      <!-- ===========================================================portfolio start===================================================== -->
+
+      <div class="row">
         <div class="container">
-          <div class="row about1 m-4">
-            <div class="row">
-              <div class="col-md-6">
-                <p>
-                  Welcome to <strong>Design Exhibition Space </strong> – your one-stop destination for beautifully
-                  crafted
-                  <strong>portfolio</strong>, <strong>resume</strong>, and <strong>digital card templates</strong>.
-                  Whether you're a creative professional, a job seeker, or someone looking to make a lasting impression,
-                  our collection of modern, customizable designs has you covered.
-                </p>
-                <p>
-                  At Design Exhibition Space, we believe that great design should be accessible to everyone. Our mission
-                  is to
-                  empower users to present their skills and stories in the most impactful way possible, without needing
-                  advanced technical knowledge.
-                </p>
+          <div class="row">
+            <div class="col-md-6 mt-5">
+              <img src="{% static 'images/portfolio4.jpg' %}" width="100%" alt="">
+            </div>
+            <div class="col-md-6">
+              <div class="row mt-5">
+                <div class="col-md-6">
+                  <img src="{% static 'images/portfolio1.jpg' %}" width="100%" alt="">
+                </div>
+                <div class="col-md-6">
+                  <img src="{% static 'images/portfolio2.jpg' %}" width="100%" alt="">
+                </div>
               </div>
-              <div class="col-md-6">
-                <p>
-                  Our platform is built using the latest technologies including
-                  <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, and <strong>Python</strong>,
-                  ensuring a seamless, fast, and user-friendly experience.
-                </p>
-                <p>
-                  We provides differents types of templatesof portfolio and resumes. Whether you want to build a sleek
-                  portfolio, a standout resume, or an eye-catching digital card – we've got you covered.
-                </p>
-
-                <button class="rounded-1  py-2 px-5 mt-1 fw-bold">Read More</button>
+              <div class="row mt-5">
+                <div class="col-md-6">
+                  <img src="{% static 'images/portfolio3.jpg' %}" width="100%" alt="">
+                </div>
+                <div class="col-md-6">
+                  <img src="{% static 'images/portfolio4.jpg' %}" width="100%" alt="">
+                </div>
               </div>
-
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- =========================================================About end================================================================== -->
+      <!-- ============================================================portfolio end====================================================== -->
 
-    <!-- ========================================================Login start================================================================ -->
-
+      <!-- ========================================================Login start================================================================ -->
 
 
-    <!-- =============================================================login end=============================================================== -->
+
+      <!-- =============================================================login end=============================================================== -->
 
 
-    <!-- ==============================================================footer start====================================================== -->
-    <div class="container-fluid footer shadow-lg">
-      <div class="row m-5">
-        <div class="col-md-4">
-          <span class="des fs-2">Design Exhibition Space</span>
-        </div>
-        <div class="col-md-4 mt-3">
-          <h5>Quick Access</h5>
-          <ul>
-            <li><a href="{% url 'index' %}">Home</a></li>
-            <li><a href="#aboutt">About</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Login</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4 mt-3">
-          <h5>Our Services</h5>
-          <ul>
-            <li><a href="{% url 'index' %}">Portfolio</a></li>
-            <li><a href="#aboutt">Resumes</a></li>
-            <li><a href="">Card</a></li>
-          </ul>
+      <!-- ==============================================================footer start====================================================== -->
+     <div class="row mt-5 footer py-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-4 mt-5">
+            <span class="des fs-2">Design Exhibition Space</span>
+          </div>
+          <div class="col-md-3 mt-3">
+            <h5 class="ms-4">Quick Access</h5>
+            <ul>
+              <li><a href="{% url 'index' %}">
+                  <img src="{% static 'images/arrow.gif' %}" width="7%" alt="">Home</a></li>
+              <li><a href="#aboutt">
+                  <img src="{% static 'images/arrow.gif' %}" width="7%" alt="">About</a></li>
+              <li><a href="">
+                  <img src="{% static 'images/arrow.gif' %}" width="7%" alt="">Services</a></li>
+              <li><a href="">
+                  <img src="{% static 'images/arrow.gif' %}" width="7%" alt="">Login</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mt-3">
+            <h5 class="ms-4">Our Services</h5>
+            <ul>
+              <li><a href="{% url 'index' %}"> <img src="{% static 'images/arrow.gif' %}" width="7%"
+                    alt="">Portfolio</a></li>
+              <li><a href="#aboutt"><img src="{% static 'images/arrow.gif' %}" width="7%" alt="">Resumes</a></li>
+              <li><a href=""><img src="{% static 'images/arrow.gif' %}" width="7%" alt="">Card</a></li>
+            </ul>
+          </div>
+          <div class="col-md-1"></div>
         </div>
       </div>
-    </div>
+     </div>
+      <div class="row copyright">
+        <div class="container-fluid">
+          <div class="row text-center">
+            <div class="col-md-12 fw-bold">
+              <span>© Copyright Design Exhibition Space All Rights Reserved</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <!-- ===============================================================footer end===================================================== -->
+      <!-- ===============================================================footer end===================================================== -->
+
   </div>
   <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
