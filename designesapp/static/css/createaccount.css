@@ -1,0 +1,61 @@
+/* ====================create account start========================= */
+body{
+    background:linear-gradient(white,skyblue);
+}
+.reg{
+    border: 2px solid none;
+    border-radius: 0px 120px 120px 0px;
+    background-color:#37517e;
+    color: aliceblue;
+}
+.reg span{
+    color: aliceblue;
+
+}
+.reg button{
+    background-color: #47b2e4;
+}
+.reg button a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.regg{
+    border: 2px solid none;
+    border-radius: 0px 250px 250px 0px;
+    background-color:white;
+}
+.btn{
+    background-color: #47b2e4;
+    color: white;
+    font-weight: bold;
+    margin-left:36% ;
+}
+.btn:hover{
+    background-color: #37517e;
+    color: white;
+    font-weight: bold;
+}
+.form{
+    color: #37517e;
+}
+.form input{
+    box-shadow: 0px 2px 3px #37517e;
+    color: #37517e;
+}
+.form input:hover{
+    border: 1px solid #47b2e4;
+    box-shadow: 0px 2px 3px #37517e;
+    color: #37517e;
+}
+.sendbtn{
+    background-color:#37517e;
+    border: 1px solid #47b2e4;
+    color: white;
+}
+.sendbtn:hover{
+    background-color: #37517e;
+    box-shadow: 0px 2px 3px limegreen;
+}
+
+/* ===========================create account end========================= */

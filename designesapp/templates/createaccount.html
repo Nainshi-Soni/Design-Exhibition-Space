@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Design Exhibition Space</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/createaccount.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row contain">
+            <div class="col-md-12">
+                <div class="container-fluid">
+                    <!-- =================================================Nav bar start=================================================================== -->
+                    <div class="row navv">
+                        <div class="col-md-12">
+                            <nav class="navbar navbar-expand-lg">
+                                <div class="container-fluid">
+                                    <a class="navbar-brand" href="#">
+                                        <span class="des fs-4">Design Exhibition Space</span>
+                                    </a>
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold mt-2">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" aria-current="page"
+                                                    href="{% url 'index'%}">Home</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link active" aria-current="page" href="#aboutt">About</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link active" aria-current="page"
+                                                    href="#service">Services</a>
+                                            </li>
+                                            <!-- <li class="nav-item"> 
+                      <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+                    </li>-->
+                                            <li class="nav-item">
+                                                <a class="nav-link active" aria-current="page" href="#">Login</a>
+                                            </li>
+                                        </ul>
+                                        <!-- <form class="d-flex" role="search"> 
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline" type="submit"><i class="fa-search"></i></button>
+                    </form>-->
+                                    </div>
+                                </div>
+                            </nav>
+
+                        </div>
+                    </div>
+                    <!-- ======================================================Nav bar end================================================================ -->
+                </div>
+            </div>
+        </div>
+        <!-- ========================================================Create Account start================================================================ -->
+        <div class="container-fluid mt-5">
+            <div class="row mt-3">
+                <div class="col-md-12 text-center">
+                    <h1
+                        style="font-weight: bolder; font-family: monotype corsiva; color:#37517e; text-shadow: 2px 3px 3px  #37517e;">
+                        Please Share Some Details Here</h1>
+                </div>
+            </div>
+
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <div class="row bg-white regg">
+                            <div class="col-md-4 reg text-center" style="align-content: center;" data-aos="fade-right">
+                                <h1>Welcome User!</h1>
+                                <span>Enter your personal details for <br> registration </span> <br>
+                                <button id="Sign" class="rounded-pill p-1 fw-bold mt-3"> <a href="#">Sign In
+                                        Here</a></button>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="form">
+                                    <form class="m-5" id="form" data-aos="fade-down">
+                                        <div class="mb-3  fw-bold fs-5">
+                                            <label for="name" class="form-label"> Name :</label>
+                                            <input type="name" placeholder="Full Name" class="form-control" required
+                                                id="name" onkeyup="fname()">
+                                        </div>
+                                        <div class="mb-1  fw-bold fs-5">
+                                            <label for="gender" class="form-label">Gender:</label>
+                                            <input type="radio" class="r1 m-2" name="r1" id="rd1"
+                                                style="box-shadow: none;">Male
+                                            <input type="radio" class="r1 m-2" name="r1" id="rd2"
+                                                style="box-shadow: none;">Female
+                                            <input type="radio" class="r1 m-2" name="r1" id="rd3"
+                                                style="box-shadow: none;">Others
+                                        </div>
+                                        <div class="mb-1  fw-bold fs-5">
+                                            <label for="number" class="form-label">Contact Number:</label>
+                                            <input type="number" placeholder="Mobile Number" class="form-control"
+                                                id="number" onkeyup="contact()">
+                                            <br />
+                                        </div>
+                                        <div class="mb-3  fw-bold fs-5">
+                                            <label for="otp" class="form-label"> Enter OTP :</label>
+                                            <input type="text" placeholder="OTP" class="form-control" id="otp" required>
+                                        </div>
+                                        <button type="button" class=" sendbtn rounded-pill p-3 m-2">Send</button>
+                                        <button type="button" class=" sendbtn rounded-pill ms-2 m-2">Validate</button>
+
+                                        <div class="mb-3  fw-bold fs-5">
+                                            <label for="email" class="form-label"> Email Address :</label>
+                                            <input type="email" placeholder="Email" class="form-control" id="email"
+                                                aria-describedby="emailHelp" required onkeyup="mail()">
+                                        </div>
+
+                                        <button type="submit" class="btn rounded-pill mt-5">Sign Up</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- =============================================================Create Account end=============================================================== -->
+
+
+        <!-- ==============================================================footer start====================================================== -->
+        <div class="row mt-5 footer py-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-4 mt-5">
+                        <span class="des fs-2">Design Exhibition Space</span>
+                    </div>
+                    <div class="col-md-3 mt-3">
+                        <h5 class="ms-4">Quick Access</h5>
+                        <ul>
+                            <li class="mt-1"><a href="{% url 'index' %}">
+                                    <img src="{% static 'images/arrow.gif' %}" width="7%" alt="">Home</a></li>
+                            <li class="mt-1"><a href="#aboutt">
+                                    <img src="{% static 'images/arrow.gif' %}" width="7%" alt="">About</a></li>
+                            <li class="mt-1"><a href="#service">
+                                    <img src="{% static 'images/arrow.gif' %}" width="7%" alt="">Services</a></li>
+                            <li class="mt-1"><a href="#login">
+                                    <img src="{% static 'images/arrow.gif' %}" width="7%" alt="">Login</a></li>
+                            <li class="mt-1"><a href="{% url 'createaccount' %}">
+                                    <img src="{% static 'images/arrow.gif' %}" width="7%" alt="">Create Account?</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 mt-3">
+                        <h5 class="ms-4">Our Services</h5>
+                        <ul>
+                            <li class="mt-1"><a href="{% url 'index' %}"> <img src="{% static 'images/arrow.gif' %}"
+                                        width="7%" alt="">Portfolio</a></li>
+                            <li class="mt-1"><a href="#aboutt"><img src="{% static 'images/arrow.gif' %}" width="7%"
+                                        alt="">Resumes</a>
+                            </li>
+                            <li class="mt-1"><a href=""><img src="{% static 'images/arrow.gif' %}" width="7%"
+                                        alt="">Card</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row copyright">
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <div class="col-md-12 fw-bold">
+                        <span>© Copyright Design Exhibition Space All Rights Reserved</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===============================================================footer end===================================================== -->
+
+    </div>
+    <script src="{% static 'js/index.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

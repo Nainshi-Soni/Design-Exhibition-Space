@@ -47,7 +47,7 @@
     font-weight: bolder;
 }
 
-.about:hover {
+.about h1:hover {
     background: linear-gradient(#c2d3f0, whitesmoke, #d3ddee);
 }
 
@@ -138,5 +138,61 @@
     color: white;
     font-weight: bold;
 }
+.card button:hover{
+    background-color: #37517e;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 2px 3px blueviolet;
+}
+.portfolio img:hover{
+    box-shadow: 0px 5px 7px #8cafeb;
+    transform: scale(1.10);
+    transition: 1s;
+}
 
-/* ===================services end========================= */a
+/* ===================services end========================= */
+
+
+
+/* ============================Login Start============================== */
+.form1{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #37517e;
+    border: 2px solid rgb(152, 232, 152);
+    color: whitesmoke;
+}
+.form1 h1{
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+.form1 input:hover{
+    box-shadow: 0px 3px 4px aliceblue;
+}
+.form1 button{
+    display: flex;
+    background-color: aliceblue;
+    color: #37517e;
+    border: 1px solid #47b2e4;
+    margin-left: 40%;
+}
+.form1 button:hover{
+    display: flex;
+    background-color: #d3ddee;
+    color: #0b2653;
+    box-shadow: 0px 3px 4px #47b2e4;
+}
+.form1 span a{
+    color: aliceblue;
+}
+.form1 span a:hover{
+    color:#47b2e4;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+#fp:hover{
+    color:#47b2e4;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+/* ==============================login end================================ */
