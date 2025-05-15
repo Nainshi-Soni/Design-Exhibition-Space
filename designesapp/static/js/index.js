@@ -39,3 +39,38 @@ function mail() {
         document.getElementById("email").style.border = "3px solid green";
     }
 }
+function pas() {
+    //  window.alert("ram ram");
+    var pass = document.getElementById("pass").value;
+    //window.alert(pass);
+    //pattern for strong password
+    var pps = /^[A-Za-z]+[A-Za-z0-9.@$#*/%&*^_(+\[+\]+{\+\})+!]+[A-Za-z0-9@$*.#%&*^_(+\[+\]+{\+\})+!]+[A-Za-z0-9.@$*/#%&*^_(+\[+\]+{\+\})+!]{5,}$/;
+    var ppass = /^[A-Za-z]{1,}$/;
+    //pattern for weak password
+    var ppas = /^[A-Za-z0-9]+[A-Za-z0-9]{3,}$/;
+    ////pattern for medium password
+    if (ppass.test(pass)) {
+        //window.alert(pps);
+        document.getElementById("sp2").innerHTML = "weak password";
+        document.getElementById("sp2").style.color = "red";
+        document.getElementById("pass").style.border = "3px solid red";
+       // document.getElementById("hw").innerHTML = "if you enter alphabet and number between 0-9 than you create the medium password";
+    }
+    else if (ppas.test(pass)) {
+        document.getElementById("sp2").innerHTML = "medium password";
+        document.getElementById("sp2").style.color = "yellow";
+        document.getElementById("pass").style.border = "3px solid yellow";
+       // document.getElementById("hw").innerHTML = "if you want to create strong password then please enter some alphabet and minimum 1special character and  minimum one number between 0-9 than the pass is strong pass";
+    }
+    else if (pps.test(pass)) {
+        document.getElementById("sp2").innerHTML = "strong password";
+        document.getElementById("sp2").style.color = "green";
+        document.getElementById("pass").style.border = "3px solid green";
+     //   document.getElementById("hw").innerHTML = "you created the strong password ";
+    }
+    else {
+        
+    }
+
+
+}

@@ -1,10 +1,10 @@
 /* ====================create account start========================= */
 body{
-    background:linear-gradient(white,skyblue);
+    background:linear-gradient(white,skyblue,white);
 }
 .reg{
     border: 2px solid none;
-    border-radius: 0px 120px 120px 0px;
+    border-radius: 0px 150px 120px 0px;
     background-color:#37517e;
     color: aliceblue;
 }
@@ -22,7 +22,7 @@ body{
 }
 .regg{
     border: 2px solid none;
-    border-radius: 0px 250px 250px 0px;
+   /* border-radius: 0px 10px 10px 0px;*/
     background-color:white;
 }
 .btn{
