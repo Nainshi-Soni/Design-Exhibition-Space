@@ -25,7 +25,7 @@ body{
    /* border-radius: 0px 10px 10px 0px;*/
     background-color:white;
 }
-.btn{
+.form .btn{
     background-color: #47b2e4;
     color: white;
     font-weight: bold;

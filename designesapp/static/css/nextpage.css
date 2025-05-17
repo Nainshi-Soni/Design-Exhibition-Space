@@ -1,0 +1,53 @@
+.live-demo{
+    text-align: justify;
+}
+.live-demo h3,h4{
+    font-weight: bold;
+    text-shadow: 2px 5px 3px #47b2e4;
+    text-transform: capitalize;
+}
+.img{
+    background-image:url('{{ show.port_img }}');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:400px;
+    width: 100%;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 10px #47b2e4;
+}
+.img-hover{
+    height:400px;
+    width: 100%;
+}
+.img-hover a .btn{
+    visibility: hidden;
+    text-decoration: none;
+    color: white;
+    margin-top: 25%;
+    margin-left: 40%;
+    font-weight: bold;
+}
+.img-hover:hover{
+    background-color: #37517e9d;
+}
+.img-hover:hover .btn{
+   visibility: visible;
+}
+.img-hover .btn:hover{
+    background-color: white;
+   color: #37517e;
+   font-weight: bold;
+}
+.all-buttons{
+    margin-top:15%;
+    height:45%;
+    width: 100%;
+    padding:10%;
+}
+.all-buttons .btn{
+    margin: 10px;
+    width:100%;
+    padding:15px;
+    font-weight: bold;
+}

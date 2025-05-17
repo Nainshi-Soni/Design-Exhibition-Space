@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% block title %} Portfolios {% endblock %}
+{% block start %}
+{% load static %}
+<div class="container bg-light my-4 live-demo">
+    {% for i in show %}
+    <div class="row">
+        <div class="col-sm-8 p-3">
+            <h3>Portfolio Name</h3>
+            <span class="fs-3 text-warning">&starf;&starf;&starf;&star;&star;</span><br>
+            <div class="img mb-5" data-background-image="{{i.port_img.url}}">
+                <div  class="img-hover">
+                    <a href="#"><button class="btn btn-warning">Live Preview</button></a>
+                </div>
+            </div>
+            <h4>about protfolio</h4>
+        </div>
+        <div class="col-sm-4">
+            <div class="all-buttons">
+                <a href="{{i.port_link}}"><button class="btn btn-warning"><i class="fa-solid fa-mountain-sun"></i> Live Preview</button></a>
+                <a href="{{i.port_zip.url}}" download ><button class="btn btn-primary"><i class="fa-solid fa-cloud-arrow-down"></i> Download</button></a>
+                <a href=""><button class="btn btn-success"><i class="fa-solid fa-user-pen"></i> Edit</button></a>
+                <p class="mt-4">Design-Exhibition-Space provide easy download of various portfolios, Resumes, and Cards.
+                It faciitates effortless editing and provide edited code for downloading. </p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    <div class="row">
+        <div class="col-sm-12">
+            <p class="p-3">A responsive portfolio website is a personal or professional website designed to present an individual's skills, projects, resume, and contact information in a visually appealing and accessible way. The key feature of this portfolio is responsiveness—it automatically adapts its layout and design to different screen sizes, ensuring a smooth user experience on desktops, tablets, and mobile devices. <br>
+
+<ul><b>Purpose:</b>
+<li>To showcase a person’s work, achievements, and technical skills.</li>
+
+<li> serve as an online resume or digital identity.</li>
+
+<li> enable potential employers, clients, or collaborators to easily contact the individual.</li></ul>
+
+<ul><b>Key Features:</b>
+<li>Responsive Design: Adjusts layout using CSS Flexbox, Grid, and media queries.</li>
+
+<li>Clean User Interface: Organized, readable sections for a professional look.</li>
+
+<li>Navigation Bar: Responsive menu (hamburger menu on smaller screens).</li></ul>
+
+<ul><b>Sections Included:</b>
+
+<li>Home: Introduction and call-to-action.</li>
+
+<li>About Me: Personal and professional background.</li>
+
+<li>Projects: Portfolio of work with images, links, and descriptions.</li>
+
+<li>Skills: Visual display of technical and soft skills.</li>
+
+<li>Contact: Contact form and social media links.</li>
+
+<li>Footer: Quick links and copyright.</li></ul>
+
+<ul><b>Technologies Used:</b>
+<li>HTML – For structure and content layout.</li>
+
+<li>CSS – For styling, responsive design, and visual appeal.</li>
+
+<li>JavaScript – For interactivity (e.g., menu toggle, form validation, animations).</li>
+<li>Bootstrap - for responsive design.</li></ul>
+
+<ul><b>Benefits:</b>
+<li>Works on all devices and screen sizes.</li>
+
+<li>Enhances personal branding.</li>
+
+<li>Increases visibility and opportunities.</li>
+
+<li>Fast, interactive, and user-friendly.</li></ul>
+
+</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

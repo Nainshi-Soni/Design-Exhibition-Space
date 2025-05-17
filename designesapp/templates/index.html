@@ -194,7 +194,7 @@
       <div class="container">
         <div class="row portfolio">
           <div class="col-md-6 mt-5">
-            <img src="{% static 'images/portfolio4.jpg' %}" width="100%" alt="">
+            <a href="{% url 'nextpage' show.port_id=port_id %}"><img src="{{show.port_img.url}}" width="100%" alt=""></a>
           </div>
           <div class="col-md-6">
             <div class="row mt-5">
