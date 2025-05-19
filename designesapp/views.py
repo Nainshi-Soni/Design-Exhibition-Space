@@ -11,7 +11,8 @@ def resume4(req):
     return render(req,"resume4.html")
 def resume5(req):
     return render(req,"resume5.html")
-
+def resume6(req):
+    return render(req,"resume6.html")
 def card6(req):
     return render(req,"card6.html")
 def card5(req):
