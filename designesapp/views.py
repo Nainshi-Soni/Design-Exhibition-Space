@@ -24,3 +24,7 @@ def card2(req):
     return render(req,"card2.html")
 def card1(req):
     return render(req,"card1.html")
+def resumedynamicform(req):
+    return render(req,"resumedynamicform.html")
+def carddynamicform(req):
+    return render(req,"carddynamicform.html")
