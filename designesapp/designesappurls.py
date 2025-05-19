@@ -3,10 +3,9 @@ from . import views
 
 
 urlpatterns=[
-    # path('',views.index,name='index'),
-    # path('',views.portfolio1,name='portfolio1'),
-    # path('',views.portfolio2,name='portfolio2'),
-    path('',views.portfolio3,name='portfolio3'),
-    # path('',views.portfolio4,name='portfolio4'),
-    #  path('',views.portfolio5,name='portfolio5'),
+    path('portfolio1/',views.portfolio1,name='portfolio1'),
+    path('portfolio2/',views.portfolio2,name='portfolio2'),
+    path('portfolio3/',views.portfolio3,name='portfolio3'),
+    path('portfolio4/',views.portfolio4,name='portfolio4'),
+    path('portfolio5/',views.portfolio5,name='portfolio5'),
 ]
