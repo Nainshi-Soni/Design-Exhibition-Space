@@ -42,9 +42,9 @@
                       <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#service">Services</a>
                       </li>
-                      <!-- <li class="nav-item"> 
-                  <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
-                </li>-->
+                      <li class="nav-item"> 
+                  <a class="nav-link active" aria-current="page" href="#template">Our Templates</a>
+                </li>
                       <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Login</a>
                       </li>
@@ -86,8 +86,8 @@
     <div class="row mt-5">
       <div class="container" id="aboutt">
         <div class="row about">
-          <div class="col-md-5"></div>
-          <div class="col-md-2 text-center">
+          <div class="col-sm-5"></div>
+          <div class="col-sm-2 text-center">
             <h1>
               ABOUT US
             </h1>
@@ -189,36 +189,41 @@
     <!-- ===============================================================services end========================================================== -->
 
     <!-- ===========================================================portfolio start===================================================== -->
- {% for i in show %}
+ 
     <div class="row">
       <div class="container">
-        <div class="row portfolio">
-          <div class="col-md-6 mt-5">
+        <div class="row about mt-5" id="template">
+          <div class="col-md-4 m-auto text-center">
+            <h1>
+              OUR TEMPLATES
+            </h1>
+          </div>
+        </div>
+        <div class="row portfolio" id="portfolio">
+          {% for i in show %}
+          <div class="col-md-4 mt-5">
             <a href="{% url 'nextpage' port_id=i.port_id  %}"><img src="{{ i.port_img.url }}" width="100%" alt=""></a>
           </div>
-          <div class="col-md-6">
-            <div class="row mt-5">
-              <div class="col-md-6">
-                <img src="{% static 'images/portfolio1.jpg' %}" width="100%" alt="">
-              </div>
-              <div class="col-md-6">
-                <img src="{% static 'images/portfolio2.jpg' %}" width="100%" alt="">
-              </div>
-            </div>
-            <div class="row mt-2">
-              <div class="col-md-6">
-                <img src="{% static 'images/portfolio3.jpg' %}" width="100%" alt="">
-              </div>
-              <div class="col-md-6">
-                <img src="{% static 'images/portfolio4.jpg' %}" width="100%" alt="">
-              </div>
-            </div>
+          {% endfor %}
+        </div>
+        <div class="row" id="card">
+          {% for c in card %}
+          <div class="col-md-4 mt-5">
+            <a href="{% url 'nextpage3' card_id=c.card_id  %}"><img src="{{ c.card_img.url }}" width="100%" alt=""></a>
           </div>
+          {% endfor %}
+        </div>
+        <div class="row" id="resume">
+          {% for r in res %}
+          <div class="col-md-4 mt-5">
+            <a href="{% url 'nextpage2' resu_id=r.resu_id  %}"><img src="{{r.resu_img.url}}" width="100%" alt=""></a>
+          </div>
+        {% endfor %}          
         </div>
       </div>
     </div>
 
-    <div class="row mt-5">
+    <!-- <div class="row mt-5">
       <div class="container">
         <div class="row portfolio">
           <div class="col-md-6">
@@ -244,8 +249,8 @@
           </div>
         </div>
       </div>
-    </div>
-    {% endfor %}
+    </div> -->
+    
     <!-- ============================================================portfolio end====================================================== -->
 
     <!-- ========================================================Login start================================================================ -->
@@ -309,10 +314,10 @@
           <div class="col-md-3 mt-3">
             <h5 class="ms-4">Our Services</h5>
             <ul>
-              <li><a href="{% url 'index' %}"> <img src="{% static 'images/arrow.gif' %}" width="7%"
+              <li><a href="#portfolio"> <img src="{% static 'images/arrow.gif' %}" width="7%"
                     alt="">Portfolio</a></li>
-              <li><a href="#aboutt"><img src="{% static 'images/arrow.gif' %}" width="7%" alt="">Resumes</a></li>
-              <li><a href=""><img src="{% static 'images/arrow.gif' %}" width="7%" alt="">Card</a></li>
+              <li><a href="#resume"><img src="{% static 'images/arrow.gif' %}" width="7%" alt="">Resumes</a></li>
+              <li><a href="#card"><img src="{% static 'images/arrow.gif' %}" width="7%" alt="">Card</a></li>
             </ul>
           </div>
           <div class="col-md-1"></div>
