@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Details Form</title>
+</head>
+<body style="margin: 0; font-family: Arial, sans-serif; background: linear-gradient(to bottom, #e0f0ff, #b3d9ff);">
+
+    <h2 style="text-align: center; font-weight: bold; color: #2d3e50; padding: 20px 0; text-shadow: 1px 1px 2px #aaa;">
+        Please Share Details of the Occasion
+    </h2>
+
+    <form method="POST" action="/submit_event/" enctype="multipart/form-data"
+          style="max-width: 600px; margin: auto; margin-bottom:60px; background-color: white; padding: 30px; border-radius: 12px; box-shadow: 0 0 15px rgb(44, 44, 69);">
+        
+        {% csrf_token %}
+
+        <!-- 1: Month -->
+        <label style="display:block; margin-bottom: 5px; color: #1a2e45; font-weight: bold;">Month:</label>
+        <input type="text" name="month" placeholder="e.g. January"
+               style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 6px; border: none; background-color: #ffffff; box-shadow: 0px 2px 4px rgb(44, 44, 69);" required>
+
+        <!-- 2: Date -->
+        <label style="display:block; margin-bottom: 5px; color: #1a2e45; font-weight: bold;">Date:</label>
+        <input type="number" name="date" min="1" max="31"
+               style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 6px; border: none; background-color: #e6f0ff; box-shadow: 0px 2px 4px rgb(44, 44, 69);" required>
+
+        <!-- 3: Address -->
+        <label style="display:block; margin-bottom: 5px; color: #1a2e45; font-weight: bold;">Address:</label>
+        <textarea name="address" rows="3" placeholder="Enter full address"
+                  style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 6px; border: none; background-color: #ffffff; box-shadow: 0px 2px 4px rgb(44, 44, 69);" required></textarea>
+
+        <!-- 4: Additional Details -->
+        <label style="display:block; margin-bottom: 5px; color: #1a2e45; font-weight: bold;">Additional Details (optional):</label>
+        <textarea name="additional_details" rows="4" placeholder="Any extra notes or information"
+                  style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 6px; border: none; background-color: #e6f0ff; box-shadow: 0px 2px 4px rgb(44, 44, 69);"></textarea>
+
+        <!-- 5: Occasion -->
+        <label style="display:block; margin-bottom: 5px; color: #1a2e45; font-weight: bold;">Occasion:</label>
+        <input type="text" name="occasion" placeholder="e.g. Birthday, Anniversary"
+               style="width: 100%; padding: 10px; margin-bottom: 20px; border-radius: 6px; border: none; background-color: #ffffff; box-shadow: 0px 2px 4px rgb(44, 44, 69);" required>
+
+        <!-- Submit -->
+        <div style="text-align: center; margin-top: 20px;">
+            <button type="submit"
+                    style="padding: 10px 25px; background-color: #33b5ff; color: white; border: none; border-radius: 20px; cursor: pointer; font-weight: bold;">
+                Submit
+            </button>
+        </div>
+
+    </form>
+
+</body>
+</html>
