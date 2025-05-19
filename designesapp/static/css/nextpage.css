@@ -6,8 +6,8 @@
     text-shadow: 2px 5px 3px #47b2e4;
     text-transform: capitalize;
 }
-.img{
-    background-image:url('{{ show.port_img }}');
+/* .img{
+    /* background-image:url("{{ show.port_img.url }}"); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -15,7 +15,7 @@
     width: 100%;
     border: 1px solid gray;
     box-shadow: 1px 1px 10px #47b2e4;
-}
+} */
 .img-hover{
     height:400px;
     width: 100%;

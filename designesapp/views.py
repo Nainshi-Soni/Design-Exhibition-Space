@@ -3,13 +3,13 @@ from .models import Portfolios
 
 # Create your views here.
 def index(req):
-    sh=Portfolios.objects.all()
-    return render(req,"index.html",{'show':sh})
+    show = Portfolios.objects.all()
+    return render(req,"index.html",{'show':show})
 def createaccount(req):
     return render(req,"createaccount.html")
-def nextpage(req):
-    sh=Portfolios.objects.all()
-    return render(req,"nextpage.html",{'show':sh})
+def nextpage(req,port_id):
+    show = Portfolios.objects.get(port_id=port_id)
+    return render(req,"nextpage.html",{'show':show})
 def nextpage3(req):
     return render(req,"nextpage3.html")
 def nextpage2(req):
