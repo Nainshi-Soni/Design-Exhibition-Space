@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+{% load static %}
+
 <head>
   <meta charset="UTF-8">
   <title>Band Night Flyer</title>
@@ -7,7 +9,7 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@500&display=swap');
     body {
-      background: url('img/card11.jpeg') no-repeat center center;
+      background: url('{% static "img/card11.jpeg" %}') no-repeat center center;
       background-size: cover;
       height: 900px;
       width: 500px;

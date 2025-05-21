@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+{% load static %}
+
 <head>
   <meta charset="UTF-8">
   <title>Thank You Card</title>
@@ -7,7 +9,7 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500&display=swap');
     body {
-      background: url('img/card4.jpeg') no-repeat center center;
+      background: url('{% static "img/card4.jpeg" %}') no-repeat center center;
       background-size: cover;
       height: 900px;
       width: 500px;
@@ -56,12 +58,12 @@
 </head>
 <body>
   <div class="card-container text-center">
-    <div class="thank-you mb-5 mt-5" >Thank You</div>
+    <div class="thank-you mb-5 mt-5">Thank You</div>
     <div class="order-text">For Your Order</div>
     <div class="support-text mt-4">
       When you support a small business,<br> you're supporting a dream
     </div>
-    <div class="contact-info ">
+    <div class="contact-info">
       +123-456-7890<br>
       @reallygreatsite<br>
       123 Anywhere St., Any City

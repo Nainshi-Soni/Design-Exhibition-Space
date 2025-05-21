@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+{% load static %}
+
 <head>
   <meta charset="UTF-8">
   <title>Kitty Party Invitation</title>
@@ -8,7 +10,16 @@
 <body style="margin: 0; padding: 0;">
 
   <div class="container-fluid d-flex justify-content-center align-items-center" 
-       style="height: 900px; width: 700px; background-image: url('img/card5.jpg'); background-size: cover; background-position: center; font-family: 'Georgia', serif; color: white; text-align: center;">
+       style="
+         height: 900px; 
+         width: 700px; 
+         background-image: url('{% static "img/card5.jpg" %}'); 
+         background-size: cover; 
+         background-position: center; 
+         font-family: 'Georgia', serif; 
+         color: white; 
+         text-align: center;
+       ">
 
     <div style="background-color: rgba(0, 0, 0, 0); padding: 50px; border-radius: 20px; width: 100%;">
       
@@ -19,7 +30,8 @@
       <p style="font-size: 22px; margin-bottom: 5px;">22 March 2024</p>
       <p style="font-size: 25px; margin-bottom: 5px;">6:00 to 9:00 PM</p>
       <p style="font-size: 25px;color: #FFD700;">Venue</p>
-      <p style="font-size: 20px;">Lorem ipsum dolor  at deserunt vitae facere autem. Quod id repellendus modi dolorum eum sequi excepturi doloremque.
+      <p style="font-size: 20px;">
+        Lorem ipsum dolor at deserunt vitae facere autem. Quod id repellendus modi dolorum eum sequi excepturi doloremque.
       </p>
 
     </div>
