@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+<head>
+    <title>Resume Content Form</title>
+</head>
+<body style="margin: 0; font-family: Arial, sans-serif; background: linear-gradient(to bottom, #e0f0ff, #b3d9ff);">
+
+    <h2 style="text-align: center; font-weight: bold; color: #2d3e50; padding: 20px 0; text-shadow: 1px 1px 2px #aaa;">
+        Please Share Details Of Your Resume Here
+    </h2>
+
+    <form method="POST" action="/submit_resume/" enctype="multipart/form-data"
+          style="max-width: 600px; margin: auto; margin-bottom:60px; background-color: white; padding: 30px; border-radius: 12px; box-shadow: 0 0 15px rgb(44, 44, 69);">
+        
+        {% csrf_token %}
+
+        <!-- 1 -->
+        <label style="display:block; margin-bottom: 5px; color: #1a2e45; font-weight: bold;">Full Name:</label>
+        <input type="text" name="name"
+               style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 6px; border: none; background-color: #ffffff; box-shadow: 0px 2px 4px rgb(44, 44, 69);" required>
+
+        <!-- 2 -->
+        <label style="display:block; margin-bottom: 5px; color: #1a2e45; font-weight: bold;">Profile Picture:</label>
+        <input type="file" name="profile_pic" accept="image/*"
+               style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 6px; border: none; background-color: #e6f0ff; box-shadow: 0px 2px 4px rgb(44, 44, 69);" required>
+
+        <!-- 3 -->
+        <label style="display:block; margin-bottom: 5px; color: #1a2e45; font-weight: bold;">About You:</label>
+        <textarea name="about" rows="4"
+                  style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 6px; border: none; background-color: #ffffff; box-shadow: 0px 2px 4px rgb(44, 44, 69);" required></textarea>
+
+        <!-- 4 -->
+        <label style="display:block; margin-bottom: 5px; color: #1a2e45; font-weight: bold;">Professional Skills (comma-separated):</label>
+        <input type="text" name="professional_skills" placeholder="e.g. Python, Django, HTML"
+               style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 6px; border: none; background-color: #e6f0ff; box-shadow: 0px 2px 4px rgb(44, 44, 69);" required>
+
+        <!-- 5 -->
+        <label style="display:block; margin-bottom: 5px; color: #1a2e45; font-weight: bold;">Personal Skills (comma-separated):</label>
+        <input type="text" name="personal_skills" placeholder="e.g. Leadership, Communication"
+               style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 6px; border: none; background-color: #ffffff; box-shadow: 0px 2px 4px rgb(44, 44, 69);" required>
+
+        <!-- 6 -->
+        <label style="display:block; margin-bottom: 5px; color: #1a2e45; font-weight: bold;">Company Name (Work Experience):</label>
+        <input type="text" name="company_name"
+               style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 6px; border: none; background-color: #e6f0ff; box-shadow: 0px 2px 4px rgb(44, 44, 69);" required>
+
+        <!-- 7 -->
+        <label style="display:block; margin-bottom: 5px; color: #1a2e45; font-weight: bold;">Company Details (bullet points, separated by semicolons):</label>
+        <textarea name="company_details" rows="3"
+                  style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 6px; border: none; background-color: #ffffff; box-shadow: 0px 2px 4px rgb(44, 44, 69);"
+                  placeholder="e.g. Managed team; Deployed application; Automated reports" required></textarea>
+
+        <!-- 8 -->
+        <label style="display:block; margin-bottom: 5px; color: #1a2e45; font-weight: bold;">Education (School/College Name):</label>
+        <input type="text" name="education_name"
+               style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 6px; border: none; background-color: #e6f0ff; box-shadow: 0px 2px 4px rgb(44, 44, 69);" required>
+
+        <!-- 9 -->
+        <label style="display:block; margin-bottom: 5px; color: #1a2e45; font-weight: bold;">Education Details (bullet points, separated by semicolons):</label>
+        <textarea name="education_details" rows="3"
+                  style="width: 100%; padding: 10px; margin-bottom: 20px; border-radius: 6px; border: none; background-color: #ffffff; box-shadow: 0px 2px 4px rgb(44, 44, 69);"
+                  placeholder="e.g. B.Tech in CS; CGPA 8.5; Participated in tech fest" required></textarea>
+
+        <!-- Submit -->
+        <div style="text-align: center; margin-top: 20px;">
+            <button type="submit"
+                    style="padding: 10px 25px; background-color: #33b5ff; color: white; border: none; border-radius: 20px; cursor: pointer; font-weight: bold;">
+                Submit
+            </button>
+        </div>
+
+    </form>
+
+</body>
+</html>

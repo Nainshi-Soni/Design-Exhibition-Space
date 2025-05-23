@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Event Details Form</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #e0f0ff, #b3d9ff);
+        }
+        h2 {
+            text-align: center;
+            font-weight: bold;
+            color: #2d3e50;
+            padding: 20px 0;
+            text-shadow: 1px 1px 2px #aaa;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+            margin-bottom: 60px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgb(44, 44, 69);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #1a2e45;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            border: none;
+            box-shadow: 0px 2px 4px rgb(44, 44, 69);
+            font-size: 1rem;
+        }
+        input[type="text"], textarea {
+            background-color: #ffffff;
+        }
+        input[type="number"], textarea[name="additional_details"] {
+            background-color: #e6f0ff;
+        }
+        button {
+            padding: 10px 25px;
+            background-color: #33b5ff;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+        button:hover {
+            background-color: #289ad6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Please Share Details of the Occasion</h2>
+
+    <form method="POST" action="{% url 'submit_event' %}" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        <!-- 1: Month -->
+        <label for="month">Month:</label>
+        <input type="text" id="month" name="month" placeholder="e.g. January" required>
+
+        <!-- 2: Date -->
+        <label for="date">Date:</label>
+        <input type="number" id="date" name="date" min="1" max="31" required>
+
+        <!-- 3: Address -->
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="3" placeholder="Enter full address" required></textarea>
+
+        <!-- 4: Additional Details -->
+        <label for="additional_details">Additional Details (optional):</label>
+        <textarea id="additional_details" name="additional_details" rows="4" placeholder="Any extra notes or information"></textarea>
+
+        <!-- 5: Occasion -->
+        <label for="occasion">Occasion:</label>
+        <input type="text" id="occasion" name="occasion" placeholder="e.g. Birthday, Anniversary" required>
+
+        <!-- Submit -->
+        <div style="text-align: center; margin-top: 20px;">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
