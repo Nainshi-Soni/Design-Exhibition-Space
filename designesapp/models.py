@@ -16,3 +16,11 @@ class Resumes(models.Model):
     resu_id=models.IntegerField(primary_key=True)
     resu_img=models.ImageField(null=True,upload_to="images/")
     resu_file=models.FileField(null=True,upload_to="file/",blank=True)
+
+class Createaccount(models.Model):
+    name=models.CharField(max_length=80)
+    email=models.CharField(max_length=100)
+    contactno=models.CharField(max_length=15)
+    passw=models.CharField(max_length=50)
+    cpassw=models.CharField(max_length=50)
+    date=models.DateField(max_length=30)

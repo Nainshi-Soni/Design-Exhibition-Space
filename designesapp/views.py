@@ -1,5 +1,7 @@
 from django.shortcuts import render
-from .models import Portfolios,Cards,Resumes
+from .models import Portfolios,Cards,Resumes,Createaccount
+from django.utils import timezone
+import datetime
 
 # Create your views here.
 def index(req):
@@ -8,6 +10,16 @@ def index(req):
     show = Portfolios.objects.all()
     return render(req,"index.html",{'show':show,'card':card,'res':res})
 def createaccount(req):
+    if req.method=="POST":
+        name=req.POST['name']
+        email=req.POST['email']
+        contactno=req.POST['contactno']
+        passw=req.POST['passw']
+        cpassw=req.POST['cpassw']
+        date=datetime.date.today()
+        createaccount=Createaccount(name=name,email=email,contactno=contactno,passw=passw,cpassw=cpassw,date=date)
+        createaccount.save()
+        return render(req,"index.html")
     return render(req,"createaccount.html")
 def nextpage(req,port_id):
     show = Portfolios.objects.get(port_id=port_id)

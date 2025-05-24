@@ -25,29 +25,37 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="form">
-                                    <form class="m-5" id="form" data-aos="fade-down">
+                                    <form class="m-5" id="form" data-aos="fade-down" method="post">
+                                        {% csrf_token %}
                                         <div class="mb-3  fw-bold fs-5">
                                             <label for="name" class="form-label"> Name :</label>
-                                            <input type="name" placeholder="Full Name" class="form-control" required
+                                            <input type="name" placeholder="Full Name" class="form-control" required name="name"
                                                 id="name" onkeyup="fname()">
                                         </div>
                                         <div class="mb-3  fw-bold fs-5">
                                             <label for="email" class="form-label"> Email Address :</label>
-                                            <input type="email" placeholder="Email" class="form-control" id="email" aria-describedby="emailHelp" required
+                                            <input type="email" placeholder="Email" class="form-control" id="email" aria-describedby="emailHelp" required name="email"
                                                 onkeyup="mail()">
                                         </div>
                                         <div class="mb-1  fw-bold fs-5">
                                             <label for="number" class="form-label">Contact Number:</label>
-                                            <input type="text" placeholder="Mobile Number" class="form-control"
+                                            <input type="text" placeholder="Mobile Number" class="form-control" name="contactno"
                                                 id="number" onkeyup="contact()">
                                             <br />
                                         </div>
                                         <div class="mb-3  fw-bold fs-5">
                                             <label for="name" class="form-label"> Create Password :</label>
-                                            <input type="password" id="pass" placeholder="Create Password" class="form-control" onkeyup="pas()">
+                                            <input type="password" name="passw" id="pass" placeholder="Create Password" class="form-control" onkeyup="pas()">
                                              <h6 style="font-weight: bolder; font-family: monotype corsiva; color:#77a3e8;" class="mt-2">Please create strong password so please enter some alphabet and minimum 1 special character and minimum 1 number between 0-9</h6>
 		                                    <span id="sp2"></span>
                                         </div>
+                                        <div class="mb-3  fw-bold fs-5">
+                                            <label for="name" class="form-label"> Confirm Password :</label>
+                                            <input type="password" name="cpassw" id="pass" placeholder="Create Password" class="form-control" onkeyup="pas()">
+                                        </div>
+                                        {% if msg %}
+                                          <div class="alert alert-danger">{{msg}}</div>
+                                        {% endif %}
                                         <button type="submit" class="btn rounded-pill mt-3">Sign Up</button>
                                     </form>
                                 </div>
