@@ -30,3 +30,13 @@ def nextpage3(req,card_id):
 def nextpage2(req,resu_id):
     show = Resumes.objects.get(resu_id=resu_id)
     return render(req,"nextpage2.html",{'show':show})
+def portfolio1(req):
+    return render(req,"portfolio1.html")
+def portfolio2(req):
+    return render(req,"portfolio2.html")
+def portfolio3(req):
+    return render(req,"portfolio3.html")
+def portfolio4(req):
+    return render(req,"portfolio4.html")
+def portfolio5(req):
+    return render(req,"portfolio5.html")
