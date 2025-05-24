@@ -104,6 +104,7 @@
 .login {
     border: 2px solid lawngreen;
     background-color: rgb(245, 245, 245, 0.3);
+    border-radius: 50%;
 }
 
 /*==================footer stat=======================*/
