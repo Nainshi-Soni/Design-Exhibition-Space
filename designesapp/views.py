@@ -29,31 +29,43 @@ def nextpage2(req,resu_id):
     show = Resumes.objects.get(resu_id=resu_id)
     return render(req,"nextpage2.html",{'show':show})
 
-def resume1(req):
-    return render(req,"resume1.html")
-def resume2(req):
-    return render(req,"resume2.html")
-def resume3(req):
-    return render(req,"resume3.html")
-def resume4(req):
-    return render(req,"resume4.html")
-def resume5(req):
-    return render(req,"resume5.html")
-def resume6(req):
-    return render(req,"resume6.html")
+def resume1(req,resu_id):
+    show = Resumes.objects.get(resu_id=resu_id)
+    return render(req,"resume1.html",{'show':show})
+def resume2(req,resu_id):
+    show = Resumes.objects.get(resu_id=resu_id)
+    return render(req,"resume2.html",{'show':show})
+def resume3(req,resu_id):
+    show = Resumes.objects.get(resu_id=resu_id)
+    return render(req,"resume3.html",{'show':show})
+def resume4(req,resu_id):
+    show = Resumes.objects.get(resu_id=resu_id)
+    return render(req,"resume4.html",{'show':show})
+def resume5(req,resu_id):
+    show = Resumes.objects.get(resu_id=resu_id)
+    return render(req,"resume5.html",{'show':show})
+def resume6(req,resu_id):
+    show = Resumes.objects.get(resu_id=resu_id)
+    return render(req,"resume6.html",{'show':show})
 
-def card6(req):
-    return render(req,"card6.html")
-def card5(req):
-    return render(req,"card5.html")
-def card4(req):
-    return render(req,"card4.html")
-def card3(req):
-    return render(req,"card3.html")
-def card2(req):
-    return render(req,"card2.html")
-def card1(req):
-    return render(req,"card1.html")
+def card6(req,card_id):
+    show = Cards.objects.get(card_id=card_id)
+    return render(req,"card6.html",{'show':show})
+def card5(req,card_id):
+    show = Cards.objects.get(card_id=card_id)
+    return render(req,"card5.html",{'show':show})
+def card4(req,card_id):
+    show = Cards.objects.get(card_id=card_id)
+    return render(req,"card4.html",{'show':show})
+def card3(req,card_id):
+    show = Cards.objects.get(card_id=card_id)
+    return render(req,"card3.html",{'show':show})
+def card2(req,card_id):
+    show = Cards.objects.get(card_id=card_id)
+    return render(req,"card2.html",{'show':show})
+def card1(req,card_id):
+    show = Cards.objects.get(card_id=card_id)
+    return render(req,"card1.html",{'show':show})
 
 def resumedynamicform(req):
     return render(req,"resumedynamicform.html")
