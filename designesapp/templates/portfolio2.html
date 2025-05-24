@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/portfolio2.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>portfolio2</title>
+</head>
+<body>
+    <div class="container-fluid p-0">
+      <!-- Navbar  start -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+              <button class="navbar-toggler bg-white shadow-lg" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav m-auto fs-5">
+                  <li class="nav-item">
+                    <a class="nav-link fw-bold" aria-current="page" href="#header" id="home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#aboutme">About Me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <!-- Navbar end -->
+        <div class="container-fluid m-0">
+          <!-- Header start -->
+            <div class="row" id="header">
+                <div class="col-sm-12">
+                  <h1 class="text-start mt-5 py-5 px-4 split-text-container " >I 
+                    <span style="color: greenyellow;">'</span>M <br>
+                    <span class="text-part" data-aos="fade-right" data-aos-duration="2000">AYUSHI</span>
+                    <span class="text-part" data-aos="fade-left" data-aos-duration="2000">GUPTA <span style="color: greenyellow;">.</span></span>
+                    <p style="font-size:x-large;font-weight: normal;text-align:justify;">Web Developer</p>
+                    <ul>
+                      <li>
+                      <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                      </li>
+                      <li>
+                      <a href=""><i class="fa-brands fa-instagram"></i></a>
+                      </li>
+                      <li>
+                      <a href=""><i class="fa-brands fa-threads"></i></a>
+                      </li>
+                      <li>
+                      <a href=""><i class="fa-solid fa-envelope"></i></a>
+                      </li>
+                    </ul>
+                  </h1>
+                </div>
+                <div class="row" id="aboutme" data-aos="fade-right" data-aos-duration="2000">
+                  <div class="col-sm-8 p-5 fs-5" >
+    
+                      <p><span style="color: greenyellow;font-size: xx-large;font-weight: bold;">A</span> full-stack web developer. Currently, doing bachlor's degree in Computer Science & Engineering. I have excellent knowledge of HTML CSS, JavaScript, Python and Database, I also have good command in frameworks like Bootstrap and Django. I'm always excited for opportunity to learn the new and cutting edge technologies in web development field. I'm a self-improving , confident and a good learner.</p><a href="#contact" style="text-decoration: none;"><button class="btn rounded-pill p-3 fw-bold">Contact Me</button></a>
+    
+                  </div>
+                </div>
+            </div>
+          <!-- Header end -->
+
+          <!-- Skills start -->
+            <div class="row view" id="skills">
+                <div class="col-sm-12 bg">
+                  <h1 class="text-white text-center heading"><span style="color: greenyellow;text-decoration: underline;">01</span> My Skills</h1>
+                  <div class="col-sm-8 mt-5 m-auto text-white" id="sbar" >
+                    <li><i class="fa-brands fa-html5 fs-4"></i> HTML <span class="bar"><span class="html" data-aos^=fade></span>85%</span>
+                    </li>
+                    <li><i class="fa-brands fa-css3-alt  fs-4"></i> CSS <span class="bar"><span class="css"></span>80%</span>
+                    </li>
+                    <li><i class="fa-brands fa-bootstrap fs-4"></i> Bootstrap <span class="bar"><span class="bootstrap"></span>75%</span>
+                    </li>
+                    <li><i class="fa-brands fa-square-js fs-4"></i> JavaScript <span class="bar"><span class="js"></span>70%</span>
+                    </li>
+                    <li><i class="fa-brands fa-python fs-4"></i> Python <span class="bar"><span class="python"></span>85%</span>
+                    </li>
+                    <li><i class="fa-solid fa-code fs-4"> </i> Django <span class="bar"><span class="django"></span>75%</span>
+                    </li>
+                    <li><i class="fa-solid fa-database fs-4"></i> Database <span class="bar"><span class="database"></span>80%</span>
+                    </li>
+                    <li><i class="fa-brands fa-git-alt fs-4"></i> Git & GitHub <span class="bar"><span class="gandg"></span>75%</span>
+                    </li>
+                  </div>
+                </div>
+            </div>
+          <!-- Skills end -->
+
+          <!-- Projects start -->
+           <div class="row" id="projects">
+            <h1 class="text-white text-center heading"><span style="color: greenyellow;text-decoration: underline;">02</span> Projects</h1>
+            <div class="col-sm-10 m-auto mb-3">
+              <div class="card" data-aos="flip-up" data-aos-duration="3000">
+                <img src="{% static 'images/port2/p1.jpg' %}" class="card-img-top slide1" alt="..." height="200px">
+                <div class="slide2">
+                  <div class="card-body p-2">
+                    <h5>Online Addmission System</h5>
+                    <p class="card-text">For "Bioteck Park" using Python Django, HTML, CSS, Bootstrap, SQLite, JavaScript <br><a href=""> live demo </a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="card" data-aos="flip-up" data-aos-duration="3000">
+                <img src="{% static 'images/port2/p2.jpg' %}" class="card-img-top slide1" alt="..." height="200px">
+                <div class="slide2">
+                  <div class="card-body p-2">
+                    <h5>Grocery Shop</h5>
+                    <p class="card-text">Responsive UI design using HTML, CSS and JavaScript <br>
+                      <a href=""> live demo </a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="card" data-aos="flip-up" data-aos-duration="3000">
+                <img src="{% static 'images/port2/p3.jpg' %}" class="card-img-top slide1" alt="..." height="200px">
+                <div class="slide2">
+                  <div class="card-body p-2">
+                    <h5>Portfolio</h5>
+                    <p class="card-text">Responsive UI design using HTML, CSS, Bootstrap and JavaScript<br>
+                    <a href=""> live demo </a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="card" data-aos="flip-up" data-aos-duration="3000">
+                <img src="{% static 'images/port2/p4.PNG' %}" class="card-img-top slide1" alt="..." height="200px">
+                <div class="slide2">
+                  <div class="card-body p-2">
+                    <h5>Music Player</h5>
+                    <p class="card-text">Responsive music player using HTML, CSS, Bootstrap and JavaScript <br>
+                    <a href=""> live demo </a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
+          <!-- Projects end -->
+
+          <!-- Education start -->
+            <div class="row" id="education">
+              <div class="col-sm-12 line d-flex flex-column">
+                <h1 class="text-white text-center heading"><span style="color: greenyellow;text-decoration: underline;">03</span>Education</h1>
+                <!-- box 1 -->
+                <div class="card my-2 me-4 leftBox mt-5" style="width:25%;" data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
+                  <div class="dot"></div>
+                  <div class="card-body bg-white">
+                    <h6 class="card-title fw-bold"><i class="fa-solid fa-graduation-cap fw-bold fs-4 text-primary"></i>  B.Tech in Computer Science & Engineering (74%)</h6>
+                    <p class="card-subtitle text-body-secondary">2022-2025</p>
+                    <p class="card-text">From A.P.J Abdul Kalam Technical University, Lucknow</p>
+                  </div>
+                  <span class="left-arrow"></span>
+                </div>
+                <!-- box 1 -->
+
+                <!-- box 2 -->
+                <div class="card my-2 me-4 rightBox" style="width: 25%;" data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
+                  <div class="dot"></div>
+                  <div class="card-body bg-white">
+                    <h6 class="card-title fw-bold"><i class="fa-solid fa-user-graduate fs-4 fw-bold text-primary"></i></i>  Diploma in Mechanical Engineering (80%)</h6>
+                    <p class="card-subtitle text-body-secondary">2019-2022</p>
+                    <p class="card-text">From Board of Technical Education Uttar Pradesh, Lucknow</p>
+                  </div>
+                  <span class="right-arrow"></span>
+                </div>
+                <!-- box 2 -->
+
+                <!-- box 3 -->
+                <div class="card my-2 me-4 leftBox" style="width: 25%;" data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
+                  <div class="dot"></div>
+                  <div class="card-body bg-white">
+                    <h6 class="card-title fw-bold"><i class="fa-solid fa-school fw-bold fs-4 text-primary"></i>  Intermediate  (62%)</h6>
+                    <p class="card-subtitle text-body-secondary">2018-2019</p>
+                    <p class="card-text">from Board of Highschool and Intermediate Education Uttar Pradesh, Prayagraj</p>
+                  </div>
+                  <span class="left-arrow"></span>
+                </div>
+                <!-- box 3 -->
+
+                <!-- box 4 -->
+                <div class="card mt-2 me-4 mb-5 rightBox" style="width: 25%;" data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
+                  <div class="dot"></div>
+                  <div class="card-body bg-white">
+                    <h6 class="card-title fw-bold"><i class="fa-solid fa-school fw-bold fs-4 text-primary"></i>  Highschool (87%)</h6>
+                    <p class="card-subtitle text-body-secondary">2016-2017</p>
+                    <p class="card-text">from Board of Highschool and Intermediate Education Uttar Pradesh, Prayagraj</p>
+                  </div>
+                  <span class="right-arrow"></span>
+                </div>
+                <!-- box 4 -->
+              </div>
+            </div>
+          <!-- Education end -->
+
+          <!-- Hire me start -->
+          <div class="row" id="hireMe">
+            <div class="col-sm-12 text-white m-auto text-center p-5">
+              <h1 style="color: greenyellow;" >HIRE ME!</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aspernatur molestias repudiandae laudantium id recusandae voluptatum quos blanditiis esse delectus temporibus accusamus iste numquam a perspiciatis, provident, vitae mollitia soluta!</p>
+              <button type="button" class="btn btn-info p-3 mt-4 rounded-pill text-white fw-bold"> Download Resume</button>
+            </div>
+           </div>
+          <!-- Hire me end -->
+
+          <!-- Contact start -->
+           <div class="row" id="contact">
+            <div class="col-sm-12 bg" >
+              <div class="row m-5" data-aos="zoom-in" data-aos-duration="2000">
+                <div class="col-sm-4 ms-auto my-3 p-5 form">
+                  <h1 class="my-5 text-center">Contact</h1>
+                  <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tempora corporis inventore obcaecati totam velit ea quos ab minus ipsa sunt omnis voluptatem ducimus molestias, dicta magni, corrupti magnam. Iure.</p>
+                  <span class="text-white">ayushi1010gupta@gmail.com</span><br>
+                  <span class="text-white">Mob. No. : +91 9140684216</span>
+                  <ul class="mt-3">
+                    <li>
+                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                    <li>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                    <a href=""><i class="fa-brands fa-threads"></i></a>
+                    </li>
+                    <li>
+                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-sm-4 me-auto my-3 p-5 form" >
+                  <form action="" class="form-group">
+                    <input type="text" class="form-control inp my-3 rounded-5" placeholder="Your first name">
+                    <input type="text" class="form-control inp my-3 rounded-5" placeholder="Your last name">
+                    <input type="email" class="form-control inp my-3 rounded-5" placeholder="Your email address">
+                    <input type="text" class="form-control inp my-3 rounded-5" placeholder="Your subject of this message">
+                    <textarea name="" id="" rows="4" class="form-control inp my-3 rounded-5"></textarea>
+                    <input type="submit" class="btn form-control p-2 fw-bold" value="Submit">
+                  </form>
+                </div>
+              </div>
+            </div>
+           </div>
+          <!-- Contact end -->
+
+          <!-- Footer start -->
+           <div class="row" id="footer">
+            <div class="col-sm-12 text-white m-auto text-center">
+              <span>© 2025 portfolio template. all right reserved by Design-Exhibition-Space.</span>
+            </div>
+           </div>
+          <!-- Footer end -->
+        </div> 
+    </div>
+</body>
+<script>
+  AOS.init();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</html>
