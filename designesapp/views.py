@@ -5,10 +5,8 @@ import datetime
 
 # Create your views here.
 def index(req):
-    res=Resumes.objects.all()
-    card=Cards.objects.all()
     show = Portfolios.objects.all()
-    return render(req,"index.html",{'show':show,'card':card,'res':res})
+    return render(req,"index.html",{'show':show})
 def createaccount(req):
     if req.method=="POST":
         name=req.POST['name']
@@ -64,6 +62,29 @@ def nextpage3(req,card_id):
 def nextpage2(req,resu_id):
     show = Resumes.objects.get(resu_id=resu_id)
     return render(req,"nextpage2.html",{'show':show})
+<<<<<<< HEAD
+def portfolio1(req,port_id):
+    show = Portfolios.objects.get(port_id=port_id)
+    return render(req,"portfolio1.html",{'show':show})
+def portfolio2(req,port_id):
+    show = Portfolios.objects.get(port_id=port_id)
+    return render(req,"portfolio2.html",{'show':show})
+def portfolio3(req,port_id):
+    show = Portfolios.objects.get(port_id=port_id)
+    return render(req,"portfolio3.html",{'show':show})
+def portfolio4(req,port_id):
+    show = Portfolios.objects.get(port_id=port_id)
+    return render(req,"portfolio4.html",{'show':show})
+def portfolio5(req,port_id):
+    show = Portfolios.objects.get(port_id=port_id)
+    return render(req,"portfolio5.html",{'show':show})
+def cardreadmore(req):
+    card=Cards.objects.all()
+    return render(req,"cardreadmore.html",{'card':card})
+def resumereadmore(req):
+    res=Resumes.objects.all()
+    return render(req,"resumereadmore.html",{'res':res})
+=======
 def portfolio1(req):
     return render(req,"portfolio1.html")
 def portfolio2(req):
@@ -74,3 +95,8 @@ def portfolio4(req):
     return render(req,"portfolio4.html")
 def portfolio5(req):
     return render(req,"portfolio5.html")
+<<<<<<< HEAD
+=======
+>>>>>>> f43eb2e559682a614a317aca5eb72cbfe99b5f71
+>>>>>>> 53d07e15a8cf6b3b2dee6af1f34f4d1f25d575c1
+>>>>>>> 7470f367b19136255d71d845562fe2e026b2e1d1
