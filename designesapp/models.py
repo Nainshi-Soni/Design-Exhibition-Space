@@ -10,11 +10,13 @@ class Portfolios(models.Model):
 class Cards(models.Model):
     card_id=models.IntegerField(primary_key=True)
     card_img=models.ImageField(null=True,upload_to="images/")
+    card_link=models.CharField(max_length=50,null=True)
     card_file=models.FileField(null=True,upload_to="file/",blank=True)
 
 class Resumes(models.Model):
     resu_id=models.IntegerField(primary_key=True)
     resu_img=models.ImageField(null=True,upload_to="images/")
+    resu_link=models.CharField(max_length=50,null=True)
     resu_file=models.FileField(null=True,upload_to="file/",blank=True)
 
 class Createaccount(models.Model):
