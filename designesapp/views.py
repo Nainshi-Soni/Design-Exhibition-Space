@@ -22,11 +22,13 @@ def createaccount(req):
 def nextpage(req,port_id):
     show = Portfolios.objects.get(port_id=port_id)
     return render(req,"nextpage.html",{'show':show})
+def nextpage3(req,card_id):
+    show = Cards.objects.get(card_id=card_id)
+    return render(req,"nextpage3.html",{'show':show})
+def nextpage2(req,resu_id):
+    show = Resumes.objects.get(resu_id=resu_id)
+    return render(req,"nextpage2.html",{'show':show})
 
-def nextpage3(req):
-    return render(req,"nextpage3.html")
-def nextpage2(req):
-    return render(req,"nextpage2.html")
 def resume1(req):
     return render(req,"resume1.html")
 def resume2(req):
@@ -39,6 +41,7 @@ def resume5(req):
     return render(req,"resume5.html")
 def resume6(req):
     return render(req,"resume6.html")
+
 def card6(req):
     return render(req,"card6.html")
 def card5(req):
@@ -51,18 +54,13 @@ def card2(req):
     return render(req,"card2.html")
 def card1(req):
     return render(req,"card1.html")
+
 def resumedynamicform(req):
     return render(req,"resumedynamicform.html")
 def carddynamicform(req):
     return render(req,"carddynamicform.html")
 
-def nextpage3(req,card_id):
-    show = Cards.objects.get(card_id=card_id)
-    return render(req,"nextpage3.html",{'show':show})
-def nextpage2(req,resu_id):
-    show = Resumes.objects.get(resu_id=resu_id)
-    return render(req,"nextpage2.html",{'show':show})
-<<<<<<< HEAD
+
 def portfolio1(req,port_id):
     show = Portfolios.objects.get(port_id=port_id)
     return render(req,"portfolio1.html",{'show':show})
@@ -78,25 +76,11 @@ def portfolio4(req,port_id):
 def portfolio5(req,port_id):
     show = Portfolios.objects.get(port_id=port_id)
     return render(req,"portfolio5.html",{'show':show})
+
 def cardreadmore(req):
     card=Cards.objects.all()
     return render(req,"cardreadmore.html",{'card':card})
 def resumereadmore(req):
     res=Resumes.objects.all()
     return render(req,"resumereadmore.html",{'res':res})
-=======
-def portfolio1(req):
-    return render(req,"portfolio1.html")
-def portfolio2(req):
-    return render(req,"portfolio2.html")
-def portfolio3(req):
-    return render(req,"portfolio3.html")
-def portfolio4(req):
-    return render(req,"portfolio4.html")
-def portfolio5(req):
-    return render(req,"portfolio5.html")
-<<<<<<< HEAD
-=======
->>>>>>> f43eb2e559682a614a317aca5eb72cbfe99b5f71
->>>>>>> 53d07e15a8cf6b3b2dee6af1f34f4d1f25d575c1
->>>>>>> 7470f367b19136255d71d845562fe2e026b2e1d1
+
