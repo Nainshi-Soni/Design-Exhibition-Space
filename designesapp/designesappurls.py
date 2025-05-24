@@ -7,7 +7,7 @@ urlpatterns=[
     # path('<int:port_id>',views.index,name='index'),
     path('createaccount/',views.createaccount,name='createaccount'),
     path('nextpage/<int:port_id>/', views.nextpage, name='nextpage'),
-<<<<<<< HEAD
+
     path('nextpage2/',views.nextpage2,name='nextpage2'),
     path('nextpage3/',views.nextpage3,name='nextpage3'),
     path('resume1/',views.resume1,name='resume1'),
@@ -34,6 +34,6 @@ urlpatterns=[
     path('portfolio3/',views.portfolio3,name='portfolio3'),
     path('portfolio4/',views.portfolio4,name='portfolio4'),
     path('portfolio5/',views.portfolio5,name='portfolio5'),
->>>>>>> f43eb2e559682a614a317aca5eb72cbfe99b5f71
+
 
 ]

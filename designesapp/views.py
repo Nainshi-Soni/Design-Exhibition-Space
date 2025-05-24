@@ -24,7 +24,7 @@ def createaccount(req):
 def nextpage(req,port_id):
     show = Portfolios.objects.get(port_id=port_id)
     return render(req,"nextpage.html",{'show':show})
-<<<<<<< HEAD
+
 def nextpage3(req):
     return render(req,"nextpage3.html")
 def nextpage2(req):
@@ -74,4 +74,3 @@ def portfolio4(req):
     return render(req,"portfolio4.html")
 def portfolio5(req):
     return render(req,"portfolio5.html")
->>>>>>> f43eb2e559682a614a317aca5eb72cbfe99b5f71
