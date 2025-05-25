@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %} Card Templates {% endblock %}
+{% block start %}
+{% load static %}
+
+<div class="container" id="card">
+    <div class="row" >
+          {% for c in card %}
+          <div class="col-md-4 mt-5">
+            <a href="{% url 'nextpage3' card_id=c.card_id  %}"><img src="{{ c.card_img.url }}" width="100%" alt=""></a>
+          </div>
+          {% endfor %}
+          {% for c in card %}
+          <div class="col-md-4 mt-5">
+            <a href="{% url 'nextpage3' card_id=c.card_id  %}"><img src="{{ c.card_img.url }}" width="100%" alt=""></a>
+          </div>
+          {% endfor %}
+          {% for c in card %}
+          <div class="col-md-4 mt-5">
+            <a href="{% url 'nextpage3' card_id=c.card_id  %}"><img src="{{ c.card_img.url }}" width="100%" alt=""></a>
+          </div>
+          {% endfor %}
+    </div>
+</div>
+{% endblock %}
