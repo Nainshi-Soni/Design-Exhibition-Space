@@ -24,3 +24,7 @@ class Createaccount(models.Model):
     passw=models.CharField(max_length=50)
     cpassw=models.CharField(max_length=50)
     date=models.DateField(max_length=30)
+
+class login(models.Model):
+    email=models.CharField(max_length=100)
+    passw=models.CharField(max_length=50)

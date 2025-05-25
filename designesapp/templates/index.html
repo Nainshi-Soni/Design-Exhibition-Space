@@ -155,8 +155,7 @@
           <div class="card" style="width: 18rem;">
             <div class="card-body">
               <h3 class="card-title">Portfolio</h3>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-                content.</p>
+              <p class="card-text">Where strategy meets execution.</p>
               <button class="rounded-pill p-2">
                 <a href="#" class="card-link">Read more</a>
               </button>
@@ -165,8 +164,7 @@
           <div class="card ms-5" style="width: 18rem;">
             <div class="card-body">
               <h3 class="card-title">Resumes</h3>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-                content.</p>
+              <p class="card-text">Innovation starts where convention ends.</p>
               <button class="rounded-pill p-2">
                 <a href="#" class="card-link">Read more</a>
               </button>
@@ -175,8 +173,7 @@
           <div class="card ms-5" style="width: 18rem;">
             <div class="card-body">
               <h3 class="card-title">Card</h3>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-                content.</p>
+              <p class="card-text">Success is the sum of small efforts repeated daily.</p>
               <button class="rounded-pill p-2">
                 <a href="#" class="card-link">Read more</a>
               </button>
@@ -261,14 +258,18 @@
         <div class="col-md-6">
          <div class="form1 py-4">
            <div class="text-center"><h1 class="mt-3">LOGIN</h1></div>
-           <form class="m-4" id="form" data-aos="fade-down">       
+           {% if msg %}
+              <div class="alert alert-danger">{{msg}}</div>
+            {% endif %}
+           <form class="m-4" id="form" data-aos="fade-down" method="post" action="{% url 'logcode' %}">     
+            {% csrf_token%}  
             <div class="mb-3  fw-bold fs-5">
               <label for="email" class="form-label"> Email Address :</label>
-              <input type="email" placeholder="Email" class="form-control" id="email" aria-describedby="emailHelp" required onkeyup="mail()">
+              <input type="email" name="email" placeholder="Email" class="form-control" id="email" aria-describedby="emailHelp" required onkeyup="mail()">
             </div>
             <div class="mb-3  fw-bold fs-5">
               <label for="password" class="form-label"> Password :</label>
-              <input type="password" placeholder="Password" class="form-control" id="password" required onkeyup="mail()">
+              <input type="password" name="passw" placeholder="Password" class="form-control" id="password" required onkeyup="mail()">
             </div>
             <div class="row">
               <div class="col-md-8">
