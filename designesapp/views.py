@@ -43,8 +43,8 @@ def createaccount(req):
             send_mail(subject, message, from_email, recipient_list)
             return redirect('index')
         else:
-            msg="hi hi"
-            return redirect('createaccount',{'msg':msg})
+          msg="Please enter same password" 
+          return render(req,"createaccount.html",{'msg':msg})
     return render(req,"createaccount.html")
 def logcode(req):
     if req.method=="POST":
@@ -52,7 +52,7 @@ def logcode(req):
         passw=req.POST.get('passw')
         try:
             user=Createaccount.objects.get(email=email,passw=passw)
-            return redirect('nextpage')
+            return redirect('index')
         except Createaccount.DoesNotExist:  
             return render(req,'index.html',{'msg':'Invalid User'})
     return render(req,"createaccount.html")
