@@ -231,5 +231,16 @@
     font-family:Arial, Helvetica, sans-serif;
     font-weight: bolder;
 }
+#card img:hover{
+    box-shadow: 0px 5px 7px #8cafeb;
+    transform: scale(1.10);
+    transition: 1s;
+}
+#resume img:hover{
+    box-shadow: 0px 5px 7px #8cafeb;
+    transform: scale(1.10);
+    transition: 1s;
+}
+
 
 /* ==============================login end================================ */

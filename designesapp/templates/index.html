@@ -157,7 +157,7 @@
               <h3 class="card-title">Portfolio</h3>
               <p class="card-text">Where strategy meets execution.</p>
               <button class="rounded-pill p-2">
-                <a href="#" class="card-link">Read more</a>
+                <a href="#template" class="card-link">Read more</a>
               </button>
             </div>
           </div>
@@ -166,7 +166,7 @@
               <h3 class="card-title">Resumes</h3>
               <p class="card-text">Innovation starts where convention ends.</p>
               <button class="rounded-pill p-2">
-                <a href="#" class="card-link">Read more</a>
+                <a href="{% url 'resumereadmore' %}" class="card-link">Read more</a>
               </button>
             </div>
           </div>
@@ -175,7 +175,7 @@
               <h3 class="card-title">Card</h3>
               <p class="card-text">Success is the sum of small efforts repeated daily.</p>
               <button class="rounded-pill p-2">
-                <a href="#" class="card-link">Read more</a>
+                <a href="{% url 'cardreadmore' %}" class="card-link">Read more</a>
               </button>
             </div>
           </div>
@@ -192,7 +192,7 @@
         <div class="row about mt-5" id="template">
           <div class="col-md-2 m-auto text-center">
             <h1>
-              PORTFOLIO
+              
             </h1>
           </div>
         </div>
@@ -202,20 +202,16 @@
             <a href="{% url 'nextpage' port_id=i.port_id  %}"><img src="{{ i.port_img.url }}" width="100%" alt=""></a>
           </div>
           {% endfor %}
-        </div>
-        <div class="row" id="card">
-          {% for c in card %}
-          <div class="col-md-4 mt-5">
-            <a href="{% url 'nextpage3' card_id=c.card_id  %}"><img src="{{ c.card_img.url }}" width="100%" alt=""></a>
+          {% for i in show %}
+          <div class="col-md-6 mt-5">
+            <a href="{% url 'nextpage' port_id=i.port_id  %}"><img src="{{ i.port_img.url }}" width="100%" alt=""></a>
           </div>
           {% endfor %}
-        </div>
-        <div class="row" id="resume">
-          {% for r in res %}
+          {% for i in show %}
           <div class="col-md-4 mt-5">
-            <a href="{% url 'nextpage2' resu_id=r.resu_id  %}"><img src="{{r.resu_img.url}}" width="100%" alt=""></a>
+            <a href="{% url 'nextpage' port_id=i.port_id  %}"><img src="{{ i.port_img.url }}" width="100%" alt=""></a>
           </div>
-        {% endfor %}          
+          {% endfor %}
         </div>
       </div>
     </div>
@@ -317,8 +313,8 @@
             <ul>
               <li><a href="#portfolio"> <img src="{% static 'images/arrow.gif' %}" width="7%"
                     alt="">Portfolio</a></li>
-              <li><a href="#resume"><img src="{% static 'images/arrow.gif' %}" width="7%" alt="">Resumes</a></li>
-              <li><a href="#card"><img src="{% static 'images/arrow.gif' %}" width="7%" alt="">Card</a></li>
+              <li><a href="{% url 'resumereadmore' %}"><img src="{% static 'images/arrow.gif' %}" width="7%" alt="">Resumes</a></li>
+              <li><a href="{% url 'cardreadmore' %}"><img src="{% static 'images/arrow.gif' %}" width="7%" alt="">Card</a></li>
             </ul>
           </div>
           <div class="col-md-1"></div>

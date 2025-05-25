@@ -8,10 +8,8 @@ import datetime
 
 # Create your views here.
 def index(req):
-    res=Resumes.objects.all()
-    card=Cards.objects.all()
     show = Portfolios.objects.all()
-    return render(req,"index.html",{'show':show,'card':card,'res':res})
+    return render(req,"index.html",{'show':show})
 def createaccount(req):
     if req.method=="POST":
         name=req.POST['name']
@@ -66,3 +64,71 @@ def nextpage3(req,card_id):
 def nextpage2(req,resu_id):
     show = Resumes.objects.get(resu_id=resu_id)
     return render(req,"nextpage2.html",{'show':show})
+
+def resume1(req,resu_id):
+    show = Resumes.objects.get(resu_id=resu_id)
+    return render(req,"resume1.html",{'show':show})
+def resume2(req,resu_id):
+    show = Resumes.objects.get(resu_id=resu_id)
+    return render(req,"resume2.html",{'show':show})
+def resume3(req,resu_id):
+    show = Resumes.objects.get(resu_id=resu_id)
+    return render(req,"resume3.html",{'show':show})
+def resume4(req,resu_id):
+    show = Resumes.objects.get(resu_id=resu_id)
+    return render(req,"resume4.html",{'show':show})
+def resume5(req,resu_id):
+    show = Resumes.objects.get(resu_id=resu_id)
+    return render(req,"resume5.html",{'show':show})
+def resume6(req,resu_id):
+    show = Resumes.objects.get(resu_id=resu_id)
+    return render(req,"resume6.html",{'show':show})
+
+def card6(req,card_id):
+    show = Cards.objects.get(card_id=card_id)
+    return render(req,"card6.html",{'show':show})
+def card5(req,card_id):
+    show = Cards.objects.get(card_id=card_id)
+    return render(req,"card5.html",{'show':show})
+def card4(req,card_id):
+    show = Cards.objects.get(card_id=card_id)
+    return render(req,"card4.html",{'show':show})
+def card3(req,card_id):
+    show = Cards.objects.get(card_id=card_id)
+    return render(req,"card3.html",{'show':show})
+def card2(req,card_id):
+    show = Cards.objects.get(card_id=card_id)
+    return render(req,"card2.html",{'show':show})
+def card1(req,card_id):
+    show = Cards.objects.get(card_id=card_id)
+    return render(req,"card1.html",{'show':show})
+
+def resumedynamicform(req):
+    return render(req,"resumedynamicform.html")
+def carddynamicform(req):
+    return render(req,"carddynamicform.html")
+
+
+def portfolio1(req,port_id):
+    show = Portfolios.objects.get(port_id=port_id)
+    return render(req,"portfolio1.html",{'show':show})
+def portfolio2(req,port_id):
+    show = Portfolios.objects.get(port_id=port_id)
+    return render(req,"portfolio2.html",{'show':show})
+def portfolio3(req,port_id):
+    show = Portfolios.objects.get(port_id=port_id)
+    return render(req,"portfolio3.html",{'show':show})
+def portfolio4(req,port_id):
+    show = Portfolios.objects.get(port_id=port_id)
+    return render(req,"portfolio4.html",{'show':show})
+def portfolio5(req,port_id):
+    show = Portfolios.objects.get(port_id=port_id)
+    return render(req,"portfolio5.html",{'show':show})
+
+def cardreadmore(req):
+    card=Cards.objects.all()
+    return render(req,"cardreadmore.html",{'card':card})
+def resumereadmore(req):
+    res=Resumes.objects.all()
+    return render(req,"resumereadmore.html",{'res':res})
+
