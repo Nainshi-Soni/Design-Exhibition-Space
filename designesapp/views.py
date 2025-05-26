@@ -41,7 +41,7 @@ def createaccount(req):
             send_mail(subject, message, from_email, recipient_list)
             return redirect('index')
         else:
-          msg="Please enter same password" 
+          msg="❗Oops! Your passwords don’t match. Please re-enter the same password in both fields." 
           return render(req,"createaccount.html",{'msg':msg})
     return render(req,"createaccount.html")
 def logcode(req):
