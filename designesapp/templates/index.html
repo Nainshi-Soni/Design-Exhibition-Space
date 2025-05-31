@@ -199,7 +199,7 @@
         </div>
         <div class="row portfolio" id="portfolio">
           {% for i in show %}
-          <div class="col-md-4 mt-5">
+          <div class="col-md-6 mt-5">
             <a href="{% url 'nextpage' port_id=i.port_id  %}"><img src="{{ i.port_img.url }}" width="100%" alt=""></a>
           </div>
           {% endfor %}
@@ -209,7 +209,7 @@
           </div>
           {% endfor %}
           {% for i in show %}
-          <div class="col-md-4 mt-5">
+          <div class="col-md-6 mt-5">
             <a href="{% url 'nextpage' port_id=i.port_id  %}"><img src="{{ i.port_img.url }}" width="100%" alt=""></a>
           </div>
           {% endfor %}
@@ -259,7 +259,7 @@
               <div class="alert alert-danger">{{msg}}</div>
             {% endif %}
            <form class="m-4" id="form" data-aos="fade-down" method="post" action="{% url 'logcode' %}">     
-            {% csrf_token%}  
+            {% csrf_token %}  
             <div class="mb-3  fw-bold fs-5">
               <label for="email" class="form-label"> Email Address :</label>
               <input type="email" name="email" placeholder="Email" class="form-control" id="email" aria-describedby="emailHelp" required onkeyup="mail()">

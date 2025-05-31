@@ -135,3 +135,7 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'nainshisoni28042001@gmail.com'
 EMAIL_HOST_PASSWORD = 'tosq tvgd fhbj jweh'
+
+
+RAZORPAY_API_KEY="rzp_test_rCaqV5jIjnoliR"
+RAZORPAY_API_SECRET_KEY="QbGGMaGjGUWdzAHZcoRJKbUi"

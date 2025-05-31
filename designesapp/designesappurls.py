@@ -37,4 +37,6 @@ urlpatterns=[
     path('cardreadmore/',views.cardreadmore,name='cardreadmore'),
     path('resumereadmore/',views.resumereadmore,name='resumereadmore'),
 
+    path('payment/',views.payment,name='payment'),
+
 ]

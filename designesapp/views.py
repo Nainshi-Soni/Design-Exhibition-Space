@@ -132,3 +132,5 @@ def resumereadmore(req):
     res=Resumes.objects.all()
     return render(req,"resumereadmore.html",{'res':res})
 
+def payment(req):
+    return render(req,"payment.html")

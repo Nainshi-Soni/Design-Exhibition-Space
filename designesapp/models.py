@@ -30,3 +30,9 @@ class Createaccount(models.Model):
 class login(models.Model):
     email=models.CharField(max_length=100)
     passw=models.CharField(max_length=50)
+
+class DownloadRecord(models.Model):
+    user_email = models.EmailField()
+    resume = models.ForeignKey(Resumes, on_delete=models.CASCADE)
+    download_count = models.IntegerField(default=0)
+    has_paid = models.BooleanField(default=False)
