@@ -1,12 +1,15 @@
+from django.http import FileResponse, Http404
 from django.conf import settings
+from django.urls import reverse
 from django.shortcuts import render,redirect
 from django.core.exceptions import ObjectDoesNotExist
-from .models import Portfolios,Cards,Resumes,Createaccount,login
+from .models import Portfolios,Cards,Resumes,Createaccount,login,PortfolioDownloadRecord
 from django.contrib import messages
 from django.core.mail import send_mail
 from django.utils import timezone
 import datetime
 import razorpay
+import os
 
 
 # Create your views here.
@@ -159,3 +162,42 @@ def payment(req):
 
     return render(req,'payment.html',context)
 
+
+def portfolio_download(request, port_id):
+    if 'user_email' not in request.session:
+        return redirect('index')  # or login page
+
+    user_email = request.session['user_email']
+
+    try:
+        portfolio = Portfolios.objects.get(port_id=port_id)
+    except Portfolios.DoesNotExist:
+        raise Http404("Portfolio not found")
+
+    record, created = PortfolioDownloadRecord.objects.get_or_create(
+        user_email=user_email, portfolio=portfolio
+    )
+
+    if record.download_count >= 3 and not record.has_paid:
+        return redirect(reverse('payment'))  # redirect to payment view
+
+    # Get file path from model
+    file_path = portfolio.port_zip.path  # ensure 'port_zip' field is in your model
+
+    if not os.path.exists(file_path):
+        raise Http404("File does not exist")
+
+    record.download_count += 1
+    record.save()
+
+    return FileResponse(open(file_path, 'rb'), as_attachment=True)
+
+
+def payment_success(request):
+    user_email = request.session.get('user_email')
+    if user_email:
+        records = PortfolioDownloadRecord.objects.filter(user_email=user_email, has_paid=False)
+        for r in records:
+            r.has_paid = True
+            r.save()
+    return render(request, 'payment_success.html')

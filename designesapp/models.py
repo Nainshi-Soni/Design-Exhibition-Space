@@ -36,3 +36,9 @@ class DownloadRecord(models.Model):
     resume = models.ForeignKey(Resumes, on_delete=models.CASCADE)
     download_count = models.IntegerField(default=0)
     has_paid = models.BooleanField(default=False)
+
+class PortfolioDownloadRecord(models.Model):
+    user_email = models.EmailField()
+    portfolio = models.ForeignKey(Portfolios, on_delete=models.CASCADE)
+    download_count = models.IntegerField(default=0)
+    has_paid = models.BooleanField(default=False)
