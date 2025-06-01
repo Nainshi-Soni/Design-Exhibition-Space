@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.shortcuts import render,redirect
 from django.core.exceptions import ObjectDoesNotExist
 from .models import Portfolios,Cards,Resumes,Createaccount,login
@@ -5,11 +6,17 @@ from django.contrib import messages
 from django.core.mail import send_mail
 from django.utils import timezone
 import datetime
+import razorpay
+
 
 # Create your views here.
 def index(req):
     show = Portfolios.objects.all()
     return render(req,"index.html",{'show':show})
+def choosepage(req):
+    if 'user_email' not in req.session:
+        return redirect('index')
+    return render(req, 'choosepage.html')
 def createaccount(req):
     if req.method=="POST":
         name=req.POST['name']
@@ -50,7 +57,8 @@ def logcode(req):
         passw=req.POST.get('passw')
         try:
             user=Createaccount.objects.get(email=email,passw=passw)
-            return redirect('index')
+            req.session['user_email']=email
+            return redirect('choosepage')
         except Createaccount.DoesNotExist:  
             return render(req,'index.html',{'msg':'Invalid User'})
     return render(req,"createaccount.html")
@@ -129,8 +137,22 @@ def cardreadmore(req):
     card=Cards.objects.all()
     return render(req,"cardreadmore.html",{'card':card})
 def resumereadmore(req):
+    if 'user_email' not in req.session:
+        return redirect('index')
     res=Resumes.objects.all()
     return render(req,"resumereadmore.html",{'res':res})
 
+client = razorpay.Client(auth=(settings.RAZORPAY_API_KEY,settings.RAZORPAY_API_SECRET_KEY))
+
 def payment(req):
-    return render(req,"payment.html")
+    order_amount=1000
+    order_currency='INR'
+    payment_order=client.order.create(dict(amount=order_amount,currency=order_currency,payment_capture=1))
+    payment_order_id=payment_order['id']
+    context={
+        'amount':10, 'api_key':settings.RAZORPAY_API_KEY, 'order_id':payment_order_id
+    }
+
+
+    return render(req,'payment.html',context)
+

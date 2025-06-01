@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %} Create Account {% endblock %}
+{% block start %}
+{% load static %}
+     
+<div class="container mt-5 text-center p-5">
+    <h2 class="mb-4">Welcome! Where would you like to go?</h2>
+
+    <a href="{% url 'resumereadmore' %}" class="btn fw-bold fs-4 btn-primary mx-2 text-white">Go to Resumes</a>
+    <a href="{% url 'cardreadmore' %}" class="btn fw-bold fs-4 px-5 btn-success mx-2 text-white">Go to Cards</a>
+    <a href="{% url 'index' %}" class="btn fw-bold fs-4 btn-info mx-2 text-white">Go to Portfolios</a>
+
+    <div class="row mt-5">
+        <div class="col-md-12  p-3 text-center .pay text-white">
+            <h5>Please select </h5>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

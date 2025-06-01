@@ -39,4 +39,6 @@ urlpatterns=[
 
     path('payment/',views.payment,name='payment'),
 
+    path('choose/', views.choosepage, name='choosepage'),
+
 ]

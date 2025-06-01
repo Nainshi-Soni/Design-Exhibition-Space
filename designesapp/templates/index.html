@@ -140,7 +140,6 @@
     <!-- =========================================================About end================================================================== -->
 
     <!-- ============================================================services ================================================================= -->
-
     <div class="row" id="service">
       <div class="container-fluid">
         <div class="row about mt-5">
@@ -158,7 +157,7 @@
               <h3 class="card-title">Portfolio</h3>
               <p class="card-text">Where strategy meets execution.</p>
               <button class="rounded-pill p-2">
-                <a href="#template" class="card-link">Read more</a>
+                <a href="#template" class="card-link" onclick="portrescrd()">Read more</a>
               </button>
             </div>
           </div>
@@ -167,7 +166,7 @@
               <h3 class="card-title">Resumes</h3>
               <p class="card-text">Innovation starts where convention ends.</p>
               <button class="rounded-pill p-2">
-                <a href="{% url 'resumereadmore' %}" class="card-link">Read more</a>
+                <a href="{% url 'resumereadmore' %}" class="card-link" onclick="portrescrd()">Read more</a>
               </button>
             </div>
           </div>
@@ -176,7 +175,7 @@
               <h3 class="card-title">Card</h3>
               <p class="card-text">Success is the sum of small efforts repeated daily.</p>
               <button class="rounded-pill p-2">
-                <a href="{% url 'cardreadmore' %}" class="card-link">Read more</a>
+                <a href="{% url 'cardreadmore' %}" class="card-link" onclick="portrescrd()">Read more</a>
               </button>
             </div>
           </div>
@@ -193,7 +192,7 @@
         <div class="row about mt-5" id="template">
           <div class="col-md-2 m-auto text-center">
             <h1>
-              
+              Portfolio
             </h1>
           </div>
         </div>
@@ -248,7 +247,7 @@
     <!-- ============================================================portfolio end====================================================== -->
 
     <!-- ========================================================Login start================================================================ -->
-   
+    
      <div class="container mt-5">
       <div class="row" id="login">
         <div class="col-md-3"></div>

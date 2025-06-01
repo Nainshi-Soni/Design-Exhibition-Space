@@ -61,9 +61,34 @@ body{
 /* ===========================create account end========================= */
 
 /* ========================payment page================================ */
- .paytext{
+.paytext{
     font-family: 'Times New Roman', Times, serif;
     color: #37517e;
- }
+}
+.pay{
+    box-shadow:0px 3px 4px 5px #708cbe;
+    background-color: aliceblue;
+    color: #37517e;
+    font-family: 'Times New Roman', Times, serif;
+}
+.pay button{
+    color: whitesmoke;
+    background-color:#47b2e4;
+    border: none;
+   box-shadow:0px 3px 2px 4px  #3585aa;
+   font-family: 'Times New Roman', Times, serif;
+   font-size:20px ;
+
+}
+.pay button:hover{
+    color: whitesmoke;
+    background-color:lightgreen;
+    border: none;
+   box-shadow:0px 3px 2px 4px  lightgoldenrodyellow;
+   font-family: 'Times New Roman', Times, serif;
+   font-size:25px ;
+
+}
+
 
 /* ============================payment page========================= */
