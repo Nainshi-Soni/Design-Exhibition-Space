@@ -65,13 +65,16 @@ def logcode(req):
 
 def nextpage(req,port_id):
     show = Portfolios.objects.get(port_id=port_id)
-    return render(req,"nextpage.html",{'show':show})
+    is_logged_in = 'user_email' in req.session
+    return render(req,"nextpage.html",{'show':show, 'is_logged_in': is_logged_in})
 def nextpage3(req,card_id):
     show = Cards.objects.get(card_id=card_id)
-    return render(req,"nextpage3.html",{'show':show})
+    is_logged_in = 'user_email' in req.session
+    return render(req,"nextpage3.html",{'show':show, 'is_logged_in': is_logged_in})
 def nextpage2(req,resu_id):
     show = Resumes.objects.get(resu_id=resu_id)
-    return render(req,"nextpage2.html",{'show':show})
+    is_logged_in = 'user_email' in req.session
+    return render(req,"nextpage2.html",{'show':show, 'is_logged_in': is_logged_in})
 
 def resume1(req,resu_id):
     show = Resumes.objects.get(resu_id=resu_id)
