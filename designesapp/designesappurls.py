@@ -39,7 +39,8 @@ urlpatterns=[
 
     path('payment/',views.payment,name='payment'),
 
+    
+
     path('choose/', views.choosepage, name='choosepage'),
-    path('download_portfolio/<int:port_id>/', views.portfolio_download, name='portfolio_download'),
 
 ]
