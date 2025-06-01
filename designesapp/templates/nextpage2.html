@@ -30,7 +30,7 @@
 
                  <!--  Edit Button: Only for logged in -->
                 {% if is_logged_in %}
-                <a href=""><button class="btn btn-success"><i class="fa-solid fa-user-pen"></i> Edit</button></a>
+                <a href="{% url 'resumedynamicform' %}"><button class="btn btn-success"><i class="fa-solid fa-user-pen"></i> Edit</button></a>
 
                 {% else %}
                 
