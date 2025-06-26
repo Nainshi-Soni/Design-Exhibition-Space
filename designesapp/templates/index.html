@@ -275,13 +275,38 @@
               <span>Do you Have An Account?<a  class="fw-bold"  href="{% url 'createaccount' %}">Create Account</a></span>
               </div>
               <div class="col-md-4 text-end">
-                <span class="fw-bold" id="fp">Forgate Password</span>
+                <span class="fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" style="cursor:pointer;">forget password</span>
               </div>
             </div>
             <button type="submit" class="btn rounded-pill mt-5 px-4 fw-bold">Sign Up</button>
           </form>
         </div>
          </div>
+      </div>
+    </div>
+    <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Create New Password</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">New Password:</label>
+                <input type="text" class="form-control" id="new_pass">
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Confirm New Password:</label>
+                <input type="text" class="form-control" id="conf_new_pass"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-success">Change Password</button>
+          </div>
+        </div>
       </div>
     </div>
 
