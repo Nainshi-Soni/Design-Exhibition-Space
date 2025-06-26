@@ -34,9 +34,11 @@
 
                 {% else %}
                 
-                <button class="btn btn-success" disabled title="Login required">
-                    <i class="fa-solid fa-user-pen"></i> Edit
-                </button>
+                <a href="{% url 'payment' %}">
+                    <button class="btn btn-info" disabled title="Login required">
+                  pay for download
+                    </button>
+                </a>
                 {% endif %}
                 <p class="mt-4">Design-Exhibition-Space provide easy download of various portfolios, Resumes, and Cards.
                 It faciitates effortless editing and provide edited code for downloading. </p>
